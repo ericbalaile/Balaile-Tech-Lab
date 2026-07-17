@@ -1,162 +1,117 @@
-# Balaile Tech Lab - Developer Progress Journal
+# My Development Machine
 
-## Developer Profile
+## Overview
 
-Name:
-Eric Balaile
+This document describes the hardware and software environment used for Balaile Tech Lab development activities.
 
-Goal:
-Become a Product Engineer and Tech Founder building technology solutions for Tanzania and beyond.
-
-Current Stage:
-Building foundation and professional developer workflow.
+The machine is configured for software development, programming practice, system design, web development, AI experiments, and building technology solutions.
 
 ---
 
-# Learning Journey
+# Hardware Specifications
 
-## 2026
+## Device Information
 
-### July
-
-#### Workspace Setup
-
-Completed:
-- Created DeveloperWorkspace structure
-- Created Balaile Tech Lab documentation folder
-- Configured VS Code workspace
-- Created Setup management system
-
-Current Focus:
-- Building professional development environment
-- Learning software engineering workflow
-- Creating consistent documentation habits
+| Component | Details |
+|---|---|
+| Manufacturer | HP |
+| Model | HP EliteBook 840 G6 |
+| System Type | x64-based PC |
 
 ---
 
-# Skills Development
+## Processor
 
-## Programming
-
-Status:
-Learning
-
-Technologies:
-
-- 
+| Component | Details |
+|---|---|
+| CPU | Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz |
+| Architecture | 64-bit |
+| Virtualization | Enabled |
 
 ---
 
-## Web Development
+## Memory
 
-Status:
-Learning
-
-Technologies:
-
-- HTML
-- CSS
-- JavaScript
+| Component | Details |
+|---|---|
+| Installed RAM | 16 GB |
+| Available RAM During Check | Approximately 5.8 GB |
 
 ---
 
-## Software Engineering
+## Storage
 
-Status:
-Learning
-
-Topics:
-
-- Git and GitHub
-- Project structure
-- Documentation
-- Clean coding practices
+Storage information will be updated after disk configuration review.
 
 ---
 
-# Projects
+# Operating System
 
-## Completed Projects
-
--
-
----
-
-## Current Projects
-
--
+| Component | Details |
+|---|---|
+| OS | Microsoft Windows 11 Pro |
+| Version | 10.0.26200 |
+| Architecture | 64-bit |
+| Installation Date | 22 September 2025 |
 
 ---
 
-## Future Projects
+# Network Configuration
 
--
+## Network Interfaces
 
----
-
-# Challenges & Solutions
-
-## Challenge:
-
-Solution:
+| Interface | Details |
+|---|---|
+| Ethernet | Intel(R) Ethernet Connection I219-LM |
+| Wireless | Intel(R) Wi-Fi 6 AX200 |
 
 ---
 
-# Developer Notes
+# Development Purpose
 
-Write important lessons, ideas and discoveries here.
-# Balaile Tech Lab - Developer Progress Log
+This machine is used for:
 
-## Project Information
-
-Project Name:
-Balaile Tech Lab
-
-Goal:
-To become a Product Engineer and Tech Founder building software solutions that solve real-world problems in Tanzania and Africa.
-
----
-
-# Development Journey
-
-## July 2026
-
-### Completed
-
-✅ GitHub repository setup  
-✅ README.md creation  
-✅ Professional .gitignore configuration  
-✅ Developer Workspace architecture creation  
-✅ Git workflow established
+- Software development
+- Web application development
+- Database learning
+- Programming practice
+- Git and GitHub workflow
+- AI-assisted development
+- ERP system development
+- Portfolio project creation
 
 ---
 
-# Current Focus
+# Current Development Environment
 
-Building a professional software engineering foundation:
+## Operating System
 
-- Development environment setup
-- Programming learning roadmap
-- Full-stack development skills
-- AI-assisted development workflow
-- Portfolio project planning
+- Windows 11 Pro
 
----
+## Version Control
 
-# Next Milestones
+- Git
+- GitHub
 
-## Phase 1: Foundation
+## Code Editor
 
-[ ] Complete developer environment documentation
-
-[ ] Setup learning roadmap
-
-[ ] Create first software project
-
-[ ] Build portfolio structure
+- Visual Studio Code
 
 ---
 
-# Developer Notes
+# Future Improvements
 
-This document tracks my journey from learning programming to becoming a professional Product Engineer and Tech Founder.
+Planned improvements:
+
+- Better backup strategy
+- External monitor setup
+- Cloud development environment
+- Additional development tools
+- Containerization using Docker
+- Local database environments
+
+---
+
+# Notes
+
+This workstation is the primary development environment for building Balaile Tech Lab projects and growing towards becoming a professional Product Engineer and Tech Founder.
