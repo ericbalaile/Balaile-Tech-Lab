@@ -74,6 +74,9 @@ Global_Work_and_Travel_Website
 ├── Resources
 ├── Source_Code
 └── Tests
+```
+
+---
 
 ## Development Workflow
 
@@ -122,4 +125,3 @@ Technology choices will be finalized during the development phase based on proje
 ## Status
 
 Active Planning Phase
-```
