@@ -24,7 +24,7 @@ The website should help users:
 
 # 2. Website Sitemap
 
----
+The website structure follows a simple and user-focused hierarchy.
 
 # 3. Page Structure
 
@@ -236,3 +236,44 @@ Current Status:
 Draft Version 0.1
 
 Requires validation after receiving official client information.
+
+# 6. User Navigation Flow
+
+Typical user journey:
+
+Visitor arrives on Home Page
+
+↓
+
+Learns about company and services
+
+↓
+
+Explores available opportunities
+
+↓
+
+Reviews requirements and benefits
+
+↓
+
+Contacts company or starts application process
+
+# 7. Content Organization Principles
+
+The website follows these principles:
+
+- Information should be easy to discover.
+- Important actions should be visible.
+- Content should build trust before asking users to apply.
+- Navigation should remain simple and consistent.
+
+# 8. Future Expansion
+
+The architecture allows future additions:
+
+- Customer accounts
+- Application tracking
+- Online payments
+- CMS integration
+- Multi-language support
