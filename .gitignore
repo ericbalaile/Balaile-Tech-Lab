@@ -1,2 +1,17 @@
-# Documentation placeholders (temporary)
-# Remove entries here when documentation files become active project documents
+﻿# Temporary documentation backups
+Documentation/*_backup.md
+
+# Frontend dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
