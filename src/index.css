@@ -1,12 +1,13 @@
 ﻿@import "tailwindcss";
+@import "./styles/theme.css";
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.5;
   font-weight: 400;
 
-  color: #1f2937;
-  background-color: #ffffff;
+  color: var(--color-gray-700);
+  background-color: var(--color-white);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
