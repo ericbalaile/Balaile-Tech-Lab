@@ -23,10 +23,11 @@ function Header() {
   ];
 
   return (
-    <header>
+    <header className="border-b">
       <Container>
-        <div>
-          <div>
+        <div className="flex items-center justify-between py-6">
+
+          <div className="text-xl font-bold">
             Global Work & Travel
           </div>
 
@@ -35,6 +36,7 @@ function Header() {
           <Button variant="primary">
             Get Started
           </Button>
+
         </div>
       </Container>
     </header>
