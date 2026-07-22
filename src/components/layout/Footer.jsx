@@ -1,4 +1,5 @@
 ﻿import { NavLink } from "react-router-dom";
+import Container from "../ui/Container.jsx";
 
 function Footer() {
   const quickLinks = [
@@ -23,70 +24,99 @@ function Footer() {
   const services = [
     "Travel Management",
     "Holiday & Tours",
-    "Corporate Events",
+    "Corporate Travel",
     "Visa Assistance",
+    "Airport Transfers",
+    "Hotel Reservations",
   ];
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:grid-cols-4">
-        {/* Company */}
-        <div>
-          <h2 className="text-xl font-bold">Global Work and Travel Ltd</h2>
+      <Container>
+        <div className="grid gap-8 py-12 md:grid-cols-4">
+          {/* Company */}
+          <div>
+            <h2 className="text-xl font-bold">Global Work and Travel Ltd</h2>
 
-          <p className="mt-4 text-sm text-gray-300">
-            Professional travel solutions designed around individual and
-            organizational needs, helping clients plan and manage reliable
-            travel experiences.
-          </p>
-        </div>
+            <p className="mt-4 text-sm leading-relaxed text-gray-300">
+              Professional travel solutions designed around individual and
+              organizational needs, helping clients plan and manage reliable
+              travel experiences.
+            </p>
+          </div>
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="font-semibold">Quick Links</h3>
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-semibold text-white">Quick Links</h3>
 
-          <ul className="mt-4 space-y-2 text-sm text-gray-300">
-            {quickLinks.map((link) => (
-              <li key={link.label}>
-                <NavLink to={link.path} className="transition hover:text-white">
-                  {link.label}
-                </NavLink>
+            <ul className="mt-4 space-y-2 text-sm text-gray-300">
+              {quickLinks.map((link) => (
+                <li key={link.label}>
+                  <NavLink
+                    to={link.path}
+                    className="transition-colors duration-200 hover:text-white"
+                  >
+                    {link.label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="font-semibold text-white">Services</h3>
+
+            <ul className="mt-4 space-y-2 text-sm text-gray-300">
+              {services.map((service) => (
+                <li key={service}>{service}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="font-semibold text-white">Contact</h3>
+
+            <ul className="mt-4 space-y-3 text-sm text-gray-300">
+              <li>
+                <a
+                  href="mailto:globaltravel.tz@gmail.com"
+                  className="transition-colors duration-200 hover:text-white"
+                >
+                  Email: globaltravel.tz@gmail.com
+                </a>
               </li>
-            ))}
-          </ul>
+
+              <li>
+                <a
+                  href="tel:+255744636063"
+                  className="transition-colors duration-200 hover:text-white"
+                >
+                  Phone: +255 744 636 063
+                </a>
+              </li>
+
+              <li>
+                Location:
+                <br />
+                Victoria Palace,
+                <br />
+                Kijitonyama,
+                <br />
+                Dar es Salaam
+              </li>
+            </ul>
+          </div>
         </div>
+      </Container>
 
-        {/* Services */}
-        <div>
-          <h3 className="font-semibold">Services</h3>
-
-          <ul className="mt-4 space-y-2 text-sm text-gray-300">
-            {services.map((service) => (
-              <li key={service}>{service}</li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div>
-          <h3 className="font-semibold">Contact</h3>
-
-          <ul className="mt-4 space-y-2 text-sm text-gray-300">
-            <li>Email: globaltravel.tz@gmail.com</li>
-
-            <li>Phone: +255 756 470 311</li>
-
-            <li>Phone: +255 744 636 063</li>
-
-            <li>Website: www.gwtlltd.co.tz</li>
-
-            <li>Location: Victoria Palace, Kijitonyama, Dar es Salaam</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="border-t border-gray-700 px-6 py-6 text-center text-sm text-gray-400">
-        © 2026 Global Work and Travel Ltd. All rights reserved.
+      <div className="border-t border-gray-700">
+        <Container>
+          <div className="py-6 text-center text-sm text-gray-400">
+            © 2026 Global Work and Travel Ltd. All rights reserved.
+          </div>
+        </Container>
       </div>
     </footer>
   );
