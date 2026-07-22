@@ -60,65 +60,93 @@ function Contact() {
         </Container>
       </Section>
 
-      {/* Inquiry Form */}
+      {/* Inquiry + Location */}
       <Section>
         <Container>
-          <h2 className="text-3xl font-bold">Send Us An Inquiry</h2>
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* Inquiry Form */}
+            <div>
+              <h2 className="text-3xl font-bold">Send Us An Inquiry</h2>
 
-          <div className="mt-8 max-w-2xl">
-            <form className="space-y-6">
-              <div>
-                <label className="block font-medium">Full Name</label>
+              <form className="mt-8 space-y-6">
+                <div>
+                  <label className="block font-medium">Full Name</label>
 
-                <input
-                  type="text"
-                  className="mt-2 w-full rounded-lg border p-3"
-                  placeholder="Enter your name"
-                />
-              </div>
+                  <input
+                    type="text"
+                    className="mt-2 w-full rounded-lg border p-3"
+                    placeholder="Enter your name"
+                  />
+                </div>
 
-              <div>
-                <label className="block font-medium">Email Address</label>
+                <div>
+                  <label className="block font-medium">Email Address</label>
 
-                <input
-                  type="email"
-                  className="mt-2 w-full rounded-lg border p-3"
-                  placeholder="Enter your email"
-                />
-              </div>
+                  <input
+                    type="email"
+                    className="mt-2 w-full rounded-lg border p-3"
+                    placeholder="Enter your email"
+                  />
+                </div>
 
-              <div>
-                <label className="block font-medium">Phone Number</label>
+                <div>
+                  <label className="block font-medium">Phone Number</label>
 
-                <input
-                  type="text"
-                  className="mt-2 w-full rounded-lg border p-3"
-                  placeholder="Enter your phone number"
-                />
-              </div>
+                  <input
+                    type="text"
+                    className="mt-2 w-full rounded-lg border p-3"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
 
-              <div>
-                <label className="block font-medium">Service Required</label>
+                <div>
+                  <label className="block font-medium">Service Required</label>
 
-                <input
-                  type="text"
-                  className="mt-2 w-full rounded-lg border p-3"
-                  placeholder="Travel service you need"
-                />
-              </div>
+                  <input
+                    type="text"
+                    className="mt-2 w-full rounded-lg border p-3"
+                    placeholder="Travel service you need"
+                  />
+                </div>
 
-              <div>
-                <label className="block font-medium">Message</label>
+                <div>
+                  <label className="block font-medium">Message</label>
 
-                <textarea
-                  className="mt-2 w-full rounded-lg border p-3"
-                  rows="5"
-                  placeholder="Write your message"
-                />
-              </div>
+                  <textarea
+                    className="mt-2 w-full rounded-lg border p-3"
+                    rows="5"
+                    placeholder="Write your message"
+                  />
+                </div>
 
-              <Button variant="primary">Submit Inquiry</Button>
-            </form>
+                <Button variant="primary">Submit Inquiry</Button>
+              </form>
+            </div>
+
+            {/* Location */}
+            <div>
+              <Card>
+                <h2 className="text-3xl font-bold">Our Location</h2>
+
+                <div className="mt-6 flex h-64 items-center justify-center rounded-lg bg-gray-200">
+                  <p className="text-center text-gray-600">
+                    Office Location Map
+                    <br />
+                    Victoria Palace, Kijitonyama
+                  </p>
+                </div>
+
+                <p className="mt-6">
+                  Global Work and Travel Ltd
+                  <br />
+                  Victoria Palace,
+                  <br />
+                  Kijitonyama,
+                  <br />
+                  Dar es Salaam
+                </p>
+              </Card>
+            </div>
           </div>
         </Container>
       </Section>
