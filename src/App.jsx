@@ -1,9 +1,14 @@
-﻿function App() {
+﻿import Header from "./components/layout/Header.jsx";
+import Home from "./pages/Home.jsx";
+
+function App() {
   return (
     <>
-      <h1>Global Work and Travel Website</h1>
+      <Header />
+
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
