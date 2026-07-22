@@ -78,6 +78,33 @@ function Home() {
     },
   ];
 
+  const applicationProcess = [
+    {
+      step: "01",
+      title: "Consultation",
+      description:
+        "Discuss your goals, travel plans, and available opportunities with our professional team.",
+    },
+    {
+      step: "02",
+      title: "Application Support",
+      description:
+        "Receive guidance with documentation, preparation, and the required application steps.",
+    },
+    {
+      step: "03",
+      title: "Travel Preparation",
+      description:
+        "Get professional support before departure to ensure a smooth travel experience.",
+    },
+    {
+      step: "04",
+      title: "Start Your Journey",
+      description:
+        "Begin your international experience with confidence and continuous support.",
+    },
+  ];
+
   return (
     <main>
       {/* Hero Section */}
@@ -169,6 +196,25 @@ function Home() {
             {whyChooseUs.map((item) => (
               <Card key={item.title}>
                 <h3 className="text-xl font-semibold">{item.title}</h3>
+
+                <p className="mt-4">{item.description}</p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Application Process Section */}
+      <Section>
+        <Container>
+          <h2 className="mb-8 text-3xl font-bold">How It Works</h2>
+
+          <div className="grid gap-6 md:grid-cols-4">
+            {applicationProcess.map((item) => (
+              <Card key={item.step}>
+                <p className="text-2xl font-bold">{item.step}</p>
+
+                <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
 
                 <p className="mt-4">{item.description}</p>
               </Card>
