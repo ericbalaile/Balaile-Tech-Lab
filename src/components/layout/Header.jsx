@@ -26,50 +26,43 @@ function Header() {
   ];
 
   return (
-    <header className="border-b">
+    <header className="border-b bg-white">
       <Container>
-
-        <div className="flex items-center justify-between py-6">
-
-          <div className="text-xl font-bold">
-            Global Work & Travel
+        <div className="flex items-center justify-between py-5">
+          {/* Brand */}
+          <div className="text-xl font-bold md:text-2xl">
+            Global Work and Travel Ltd
           </div>
 
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop Navigation */}
+          <div className="hidden items-center gap-8 md:flex">
             <Navigation links={links} />
 
-            <Button variant="primary">
-              Get Started
-            </Button>
+            <Button variant="primary">Get Started</Button>
           </div>
 
+          {/* Mobile Menu Button */}
           <button
             type="button"
-            className="md:hidden text-2xl"
+            className="text-2xl md:hidden"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
           >
             ☰
           </button>
-
         </div>
 
-
+        {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-6">
-
+          <div className="border-t pb-6 pt-6 md:hidden">
             <Navigation links={links} />
 
             <div className="mt-6">
-              <Button variant="primary">
-                Get Started
-              </Button>
+              <Button variant="primary">Get Started</Button>
             </div>
-
           </div>
         )}
-
       </Container>
     </header>
   );
