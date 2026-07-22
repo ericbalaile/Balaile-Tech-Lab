@@ -73,8 +73,9 @@ function Home() {
       description: "Continuous assistance before and after placement.",
     },
     {
-      title: "Career Growth",
-      description: "Opportunities designed for long-term success.",
+      title: "Customer Satisfaction",
+      description:
+        "Focused on delivering reliable support and positive travel experiences.",
     },
   ];
 
@@ -329,8 +330,9 @@ function Home() {
       {/* Trusted Partners */}
       <Section background="light">
         <Container>
-          <h2 className="mb-8 text-3xl font-bold">Trusted Partners</h2>
-
+          <h2 className="mb-8 text-3xl font-bold">
+            Our Global Support Network
+          </h2>
           <div className="grid gap-6 md:grid-cols-4">
             {trustedPartners.map((partner) => (
               <Card key={partner.title}>
