@@ -43,19 +43,19 @@ function Home() {
 
   const services = [
     {
-      title: "Work Abroad",
+      title: "Travel Management",
       description:
-        "Discover international employment opportunities and career growth.",
+        "Helping individuals and organizations coordinate smooth, efficient, and stress-free travel arrangements.",
     },
     {
-      title: "Study Abroad",
+      title: "Holiday & Tours",
       description:
-        "Access global education opportunities and international institutions.",
+        "Creating memorable travel experiences through carefully planned holiday packages and journeys.",
     },
     {
-      title: "Travel Support",
+      title: "Visa Assistance",
       description:
-        "Get professional guidance for your international travel journey.",
+        "Providing guidance and support throughout the visa preparation process.",
     },
   ];
 
@@ -152,6 +152,10 @@ function Home() {
                 <p className="mt-4">{service.description}</p>
               </Card>
             ))}
+          </div>
+
+          <div className="mt-8">
+            <Button variant="outline">Explore All Services</Button>
           </div>
         </Container>
       </Section>
