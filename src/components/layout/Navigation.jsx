@@ -4,13 +4,13 @@ function Navigation({
   links = [],
 }) {
   return (
-    <nav>
-      <ul className="flex items-center gap-8">
+    <nav className="w-full">
+      <ul className="flex flex-col gap-4 md:flex-row md:items-center md:gap-8">
         {links.map((link) => (
           <li key={link.label}>
             <a
               href={link.path}
-              className="transition duration-300 hover:text-primary"
+              className="block transition duration-300 hover:text-primary"
             >
               {link.label}
             </a>
