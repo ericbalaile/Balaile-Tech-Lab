@@ -1,16 +1,15 @@
-﻿import { createBrowserRouter } from 'react-router-dom'
+﻿import { createBrowserRouter } from "react-router-dom";
 
-import MainLayout from '../layouts/MainLayout.jsx'
+import MainLayout from "../layouts/MainLayout.jsx";
 
-import Home from '../pages/Home.jsx'
-import About from '../pages/About.jsx'
-import Services from '../pages/Services.jsx'
-import Opportunities from '../pages/Opportunities.jsx'
-import Contact from '../pages/Contact.jsx'
+import Home from "../pages/Home.jsx";
+import About from "../pages/About.jsx";
+import Services from "../pages/Services.jsx";
+import Contact from "../pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <MainLayout />,
     children: [
       {
@@ -18,23 +17,19 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'about',
+        path: "about",
         element: <About />,
       },
       {
-        path: 'services',
+        path: "services",
         element: <Services />,
       },
       {
-        path: 'opportunities',
-        element: <Opportunities />,
-      },
-      {
-        path: 'contact',
+        path: "contact",
         element: <Contact />,
       },
     ],
   },
-])
+]);
 
-export default router
+export default router;
