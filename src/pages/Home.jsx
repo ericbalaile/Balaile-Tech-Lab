@@ -105,6 +105,27 @@ function Home() {
     },
   ];
 
+  const testimonials = [
+    {
+      quote:
+        "The guidance and support made my international travel journey simple and stress-free.",
+      name: "Sarah M.",
+      role: "International Traveler",
+    },
+    {
+      quote:
+        "Professional assistance throughout the process gave me confidence from application to departure.",
+      name: "John K.",
+      role: "Student Traveler",
+    },
+    {
+      quote:
+        "Reliable service and continuous support helped me achieve my travel goals.",
+      name: "Anna P.",
+      role: "Business Traveler",
+    },
+  ];
+
   return (
     <main>
       {/* Hero Section */}
@@ -217,6 +238,27 @@ function Home() {
                 <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
 
                 <p className="mt-4">{item.description}</p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Testimonials Section */}
+      <Section background="light">
+        <Container>
+          <h2 className="mb-8 text-3xl font-bold">Success Stories</h2>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {testimonials.map((testimonial) => (
+              <Card key={testimonial.name}>
+                <p className="italic">"{testimonial.quote}"</p>
+
+                <h3 className="mt-6 text-xl font-semibold">
+                  {testimonial.name}
+                </h3>
+
+                <p className="mt-2">{testimonial.role}</p>
               </Card>
             ))}
           </div>
