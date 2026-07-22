@@ -1,12 +1,7 @@
 ﻿import PropTypes from "prop-types";
 
-function Section({
-  children,
-  background = "default",
-  className = "",
-}) {
-  const baseStyles =
-    "py-16 md:py-20";
+function Section({ children, background = "default", className = "" }) {
+  const baseStyles = "py-16 transition-colors duration-300 md:py-20";
 
   const backgrounds = {
     default: "",
@@ -16,24 +11,18 @@ function Section({
 
   const sectionStyles = [
     baseStyles,
-    backgrounds[background],
+    backgrounds[background] || backgrounds.default,
     className,
-  ].join(" ");
+  ]
+    .filter(Boolean)
+    .join(" ");
 
-  return (
-    <section className={sectionStyles}>
-      {children}
-    </section>
-  );
+  return <section className={sectionStyles}>{children}</section>;
 }
 
 Section.propTypes = {
   children: PropTypes.node.isRequired,
-  background: PropTypes.oneOf([
-    "default",
-    "light",
-    "dark",
-  ]),
+  background: PropTypes.oneOf(["default", "light", "dark"]),
   className: PropTypes.string,
 };
 
