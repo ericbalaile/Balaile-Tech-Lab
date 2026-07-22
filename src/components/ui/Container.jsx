@@ -5,6 +5,8 @@ Container UI Component
 ========================================
 */
 
+import PropTypes from "prop-types";
+
 const containerSizes = {
   sm: "var(--container-sm)",
   md: "var(--container-md)",
@@ -13,15 +15,18 @@ const containerSizes = {
   "2xl": "var(--container-2xl)",
 };
 
-function Container({ children, size = "xl" }) {
+function Container({
+  children,
+  size = "xl",
+  className = "",
+}) {
   const maxWidth = containerSizes[size] || containerSizes.xl;
 
   return (
     <div
+      className={`mx-auto w-full ${className}`}
       style={{
-        width: "100%",
         maxWidth,
-        margin: "0 auto",
         paddingLeft: "var(--space-md)",
         paddingRight: "var(--space-md)",
       }}
@@ -30,5 +35,17 @@ function Container({ children, size = "xl" }) {
     </div>
   );
 }
+
+Container.propTypes = {
+  children: PropTypes.node.isRequired,
+  size: PropTypes.oneOf([
+    "sm",
+    "md",
+    "lg",
+    "xl",
+    "2xl",
+  ]),
+  className: PropTypes.string,
+};
 
 export default Container;
