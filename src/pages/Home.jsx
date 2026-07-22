@@ -4,6 +4,24 @@ import Button from "../components/ui/Button.jsx";
 import Card from "../components/ui/Card.jsx";
 
 function Home() {
+  const companyHighlights = [
+    {
+      title: "Personalized Travel Support",
+      description:
+        "Travel solutions customized around your goals, preferences, schedules, and requirements.",
+    },
+    {
+      title: "Complete Travel Solutions",
+      description:
+        "Professional support for holidays, business travel, visa assistance, and complete travel planning.",
+    },
+    {
+      title: "Professional Consultation",
+      description:
+        "Expert guidance to help you make informed travel decisions with confidence.",
+    },
+  ];
+
   const statistics = [
     {
       value: "10+",
@@ -78,6 +96,30 @@ function Home() {
             <div className="mt-8">
               <Button variant="primary">Explore Opportunities</Button>
             </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Company Introduction Section */}
+      <Section>
+        <Container>
+          <div>
+            <h2 className="text-3xl font-bold">Your Trusted Travel Partner</h2>
+
+            <p className="mt-4 text-lg">
+              Global Work and Travel Ltd provides professional travel solutions
+              designed around individual and organizational needs.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {companyHighlights.map((item) => (
+              <Card key={item.title}>
+                <h3 className="text-xl font-semibold">{item.title}</h3>
+
+                <p className="mt-4">{item.description}</p>
+              </Card>
+            ))}
           </div>
         </Container>
       </Section>
