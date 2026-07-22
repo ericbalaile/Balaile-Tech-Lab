@@ -1,19 +1,22 @@
 ﻿import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
-function Navigation({
-  links = [],
-}) {
+function Navigation({ links = [] }) {
   return (
     <nav className="w-full">
       <ul className="flex flex-col gap-4 md:flex-row md:items-center md:gap-8">
         {links.map((link) => (
           <li key={link.label}>
-            <a
-              href={link.path}
-              className="block transition duration-300 hover:text-primary"
+            <NavLink
+              to={link.path}
+              className={({ isActive }) =>
+                `block transition duration-300 hover:text-primary ${
+                  isActive ? "text-primary font-semibold" : ""
+                }`
+              }
             >
               {link.label}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>
@@ -26,7 +29,7 @@ Navigation.propTypes = {
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
-    })
+    }),
   ),
 };
 
