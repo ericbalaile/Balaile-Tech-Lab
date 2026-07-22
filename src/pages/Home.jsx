@@ -1,9 +1,13 @@
-﻿function Home() {
+﻿import Container from "../components/ui/Container.jsx";
+
+function Home() {
   return (
     <main>
-      <h1>Home Page</h1>
+      <Container>
+        <h1>Home Page</h1>
+      </Container>
     </main>
-  )
+  );
 }
 
-export default Home
+export default Home;
