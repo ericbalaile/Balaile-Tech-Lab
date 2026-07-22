@@ -22,6 +22,29 @@ function Home() {
     },
   ];
 
+  const whyChooseUs = [
+    {
+      title: "Professional Guidance",
+      description:
+        "Experienced support throughout your international journey.",
+    },
+    {
+      title: "Global Opportunities",
+      description:
+        "Access international work and travel pathways.",
+    },
+    {
+      title: "Reliable Support",
+      description:
+        "Continuous assistance before and after placement.",
+    },
+    {
+      title: "Career Growth",
+      description:
+        "Opportunities designed for long-term success.",
+    },
+  ];
+
   return (
     <main>
       <Section>
@@ -36,35 +59,53 @@ function Home() {
               work, travel, and career opportunities.
             </p>
 
-            <div>
-              <Button variant="primary">
-                Explore Opportunities
-              </Button>
-            </div>
+            <Button variant="primary">
+              Explore Opportunities
+            </Button>
           </div>
         </Container>
       </Section>
 
       <Section background="light">
         <Container>
+          <h2>
+            Our Services
+          </h2>
+
           <div>
-            <h2>
-              Our Services
-            </h2>
+            {services.map((service) => (
+              <Card key={service.title}>
+                <h3>
+                  {service.title}
+                </h3>
 
-            <div>
-              {services.map((service) => (
-                <Card key={service.title}>
-                  <h3>
-                    {service.title}
-                  </h3>
+                <p>
+                  {service.description}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </Section>
 
-                  <p>
-                    {service.description}
-                  </p>
-                </Card>
-              ))}
-            </div>
+      <Section>
+        <Container>
+          <h2>
+            Why Choose Us
+          </h2>
+
+          <div>
+            {whyChooseUs.map((item) => (
+              <Card key={item.title}>
+                <h3>
+                  {item.title}
+                </h3>
+
+                <p>
+                  {item.description}
+                </p>
+              </Card>
+            ))}
           </div>
         </Container>
       </Section>
