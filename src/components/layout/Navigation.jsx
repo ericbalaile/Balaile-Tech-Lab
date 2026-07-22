@@ -5,10 +5,13 @@ function Navigation({
 }) {
   return (
     <nav>
-      <ul>
+      <ul className="flex items-center gap-8">
         {links.map((link) => (
           <li key={link.label}>
-            <a href={link.path}>
+            <a
+              href={link.path}
+              className="transition duration-300 hover:text-primary"
+            >
               {link.label}
             </a>
           </li>
