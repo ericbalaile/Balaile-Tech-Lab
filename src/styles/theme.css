@@ -32,6 +32,31 @@ Design System Theme
   --font-heading: "Poppins", sans-serif;
   --font-body: "Inter", sans-serif;
 
+  /* Font Sizes */
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --text-4xl: 4rem;
+  --text-5xl: 5rem;
+
+  /* Font Weights */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line Heights */
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
   /* ========================================
      Spacing
   ======================================== */
@@ -60,4 +85,56 @@ Design System Theme
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
   --shadow-md: 0 4px 8px rgba(15, 23, 42, 0.08);
   --shadow-lg: 0 10px 20px rgba(15, 23, 42, 0.12);
+
+  /* ========================================
+     Z-Index
+======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+
+  /* ========================================
+    Transitions
+======================================== */
+
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+  --transition-slow: 500ms;
+
+  --ease-standard: ease;
+  --ease-in: ease-in;
+  --ease-out: ease-out;
+  --ease-in-out: ease-in-out;
+
+  /* ========================================
+     Focus States
+  ======================================== */
+
+  --focus-color: #1d4ed8;
+  --focus-width: 2px;
+  --focus-offset: 2px;
+  --focus-shadow: 0 0 0 3px rgba(29, 78, 216, 0.25);
+
+  /* ========================================
+     Container Widths
+  ======================================== */
+
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1440px;
+
+  /* ========================================
+     Section Spacing
+  ======================================== */
+
+  --section-sm: 3rem;
+  --section-md: 5rem;
+  --section-lg: 7rem;
 }
