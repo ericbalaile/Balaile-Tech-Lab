@@ -49,20 +49,18 @@ function Home() {
     <main>
       <Section>
         <Container>
-          <div>
-            <h1>
-              Global Opportunities Start Here
-            </h1>
+          <h1>
+            Global Opportunities Start Here
+          </h1>
 
-            <p>
-              Connecting people with international
-              work, travel, and career opportunities.
-            </p>
+          <p>
+            Connecting people with international
+            work, travel, and career opportunities.
+          </p>
 
-            <Button variant="primary">
-              Explore Opportunities
-            </Button>
-          </div>
+          <Button variant="primary">
+            Explore Opportunities
+          </Button>
         </Container>
       </Section>
 
@@ -72,19 +70,17 @@ function Home() {
             Our Services
           </h2>
 
-          <div>
-            {services.map((service) => (
-              <Card key={service.title}>
-                <h3>
-                  {service.title}
-                </h3>
+          {services.map((service) => (
+            <Card key={service.title}>
+              <h3>
+                {service.title}
+              </h3>
 
-                <p>
-                  {service.description}
-                </p>
-              </Card>
-            ))}
-          </div>
+              <p>
+                {service.description}
+              </p>
+            </Card>
+          ))}
         </Container>
       </Section>
 
@@ -94,19 +90,34 @@ function Home() {
             Why Choose Us
           </h2>
 
-          <div>
-            {whyChooseUs.map((item) => (
-              <Card key={item.title}>
-                <h3>
-                  {item.title}
-                </h3>
+          {whyChooseUs.map((item) => (
+            <Card key={item.title}>
+              <h3>
+                {item.title}
+              </h3>
 
-                <p>
-                  {item.description}
-                </p>
-              </Card>
-            ))}
-          </div>
+              <p>
+                {item.description}
+              </p>
+            </Card>
+          ))}
+        </Container>
+      </Section>
+
+      <Section background="dark">
+        <Container>
+          <h2>
+            Ready To Start Your Journey?
+          </h2>
+
+          <p>
+            Explore global opportunities with
+            professional guidance.
+          </p>
+
+          <Button variant="primary">
+            Get Started
+          </Button>
         </Container>
       </Section>
     </main>
