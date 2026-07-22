@@ -126,39 +126,58 @@ function Home() {
     },
   ];
 
+  const faqs = [
+    {
+      question: "How do I start my travel journey?",
+      answer:
+        "Contact our team for consultation and professional guidance based on your goals.",
+    },
+    {
+      question: "Do you provide visa assistance?",
+      answer:
+        "Yes. We provide support and guidance throughout the visa preparation process.",
+    },
+    {
+      question: "Which travel services do you offer?",
+      answer:
+        "We support travel management, holidays, tours, visa assistance, and travel planning.",
+    },
+    {
+      question: "Do you support international opportunities?",
+      answer:
+        "Yes. We connect individuals with international work and travel opportunities.",
+    },
+  ];
+
   return (
     <main>
       {/* Hero Section */}
       <Section>
         <Container>
-          <div>
-            <h1 className="text-4xl font-bold md:text-6xl">
-              Global Opportunities Start Here
-            </h1>
+          <h1 className="text-4xl font-bold md:text-6xl">
+            Global Opportunities Start Here
+          </h1>
 
-            <p className="mt-6 text-lg">
-              Connecting people with international work, travel, and career
-              opportunities.
-            </p>
+          <p className="mt-6 text-lg">
+            Connecting people with international work, travel, and career
+            opportunities.
+          </p>
 
-            <div className="mt-8">
-              <Button variant="primary">Explore Opportunities</Button>
-            </div>
+          <div className="mt-8">
+            <Button variant="primary">Explore Opportunities</Button>
           </div>
         </Container>
       </Section>
 
-      {/* Company Introduction Section */}
+      {/* Company Introduction */}
       <Section>
         <Container>
-          <div>
-            <h2 className="text-3xl font-bold">Your Trusted Travel Partner</h2>
+          <h2 className="text-3xl font-bold">Your Trusted Travel Partner</h2>
 
-            <p className="mt-4 text-lg">
-              Global Work and Travel Ltd provides professional travel solutions
-              designed around individual and organizational needs.
-            </p>
-          </div>
+          <p className="mt-4 text-lg">
+            Global Work and Travel Ltd provides professional travel solutions
+            designed around individual and organizational needs.
+          </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {companyHighlights.map((item) => (
@@ -172,7 +191,7 @@ function Home() {
         </Container>
       </Section>
 
-      {/* Statistics Section */}
+      {/* Statistics */}
       <Section background="light">
         <Container>
           <div className="grid gap-6 md:grid-cols-4">
@@ -187,7 +206,7 @@ function Home() {
         </Container>
       </Section>
 
-      {/* Services Section */}
+      {/* Services */}
       <Section>
         <Container>
           <h2 className="mb-8 text-3xl font-bold">Our Services</h2>
@@ -208,7 +227,7 @@ function Home() {
         </Container>
       </Section>
 
-      {/* Why Choose Us Section */}
+      {/* Why Choose Us */}
       <Section background="light">
         <Container>
           <h2 className="mb-8 text-3xl font-bold">Why Choose Us</h2>
@@ -225,7 +244,7 @@ function Home() {
         </Container>
       </Section>
 
-      {/* Application Process Section */}
+      {/* Application Process */}
       <Section>
         <Container>
           <h2 className="mb-8 text-3xl font-bold">How It Works</h2>
@@ -244,7 +263,7 @@ function Home() {
         </Container>
       </Section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials */}
       <Section background="light">
         <Container>
           <h2 className="mb-8 text-3xl font-bold">Success Stories</h2>
@@ -265,7 +284,26 @@ function Home() {
         </Container>
       </Section>
 
-      {/* Call To Action Section */}
+      {/* FAQ Preview */}
+      <Section>
+        <Container>
+          <h2 className="mb-8 text-3xl font-bold">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {faqs.map((faq) => (
+              <Card key={faq.question}>
+                <h3 className="text-xl font-semibold">{faq.question}</h3>
+
+                <p className="mt-4">{faq.answer}</p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* CTA */}
       <Section background="dark">
         <Container>
           <h2 className="text-3xl font-bold">Ready To Start Your Journey?</h2>
