@@ -62,19 +62,23 @@ function Home() {
   const whyChooseUs = [
     {
       title: "Professional Guidance",
-      description: "Experienced support throughout your international journey.",
+      description:
+        "Experienced support throughout your international journey.",
     },
     {
       title: "Global Opportunities",
-      description: "Access international work and travel pathways.",
+      description:
+        "Access international work and travel pathways.",
     },
     {
       title: "Reliable Support",
-      description: "Continuous assistance before and after placement.",
+      description:
+        "Continuous assistance before and after placement.",
     },
     {
       title: "Career Growth",
-      description: "Opportunities designed for long-term success.",
+      description:
+        "Opportunities designed for long-term success.",
     },
   ];
 
@@ -149,6 +153,29 @@ function Home() {
     },
   ];
 
+  const trustedPartners = [
+    {
+      title: "International Travel Networks",
+      description:
+        "Building connections that support smooth and reliable travel experiences.",
+    },
+    {
+      title: "Education & Career Partners",
+      description:
+        "Supporting opportunities for learning, career growth, and international experiences.",
+    },
+    {
+      title: "Accommodation Partners",
+      description:
+        "Helping travelers prepare for comfortable and organized stays.",
+    },
+    {
+      title: "Corporate & Organization Partners",
+      description:
+        "Supporting professional travel requirements and business needs.",
+    },
+  ];
+
   return (
     <main>
       {/* Hero Section */}
@@ -164,7 +191,9 @@ function Home() {
           </p>
 
           <div className="mt-8">
-            <Button variant="primary">Explore Opportunities</Button>
+            <Button variant="primary">
+              Explore Opportunities
+            </Button>
           </div>
         </Container>
       </Section>
@@ -172,7 +201,9 @@ function Home() {
       {/* Company Introduction */}
       <Section>
         <Container>
-          <h2 className="text-3xl font-bold">Your Trusted Travel Partner</h2>
+          <h2 className="text-3xl font-bold">
+            Your Trusted Travel Partner
+          </h2>
 
           <p className="mt-4 text-lg">
             Global Work and Travel Ltd provides professional travel solutions
@@ -182,9 +213,13 @@ function Home() {
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {companyHighlights.map((item) => (
               <Card key={item.title}>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl font-semibold">
+                  {item.title}
+                </h3>
 
-                <p className="mt-4">{item.description}</p>
+                <p className="mt-4">
+                  {item.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -197,9 +232,13 @@ function Home() {
           <div className="grid gap-6 md:grid-cols-4">
             {statistics.map((statistic) => (
               <Card key={statistic.label}>
-                <h3 className="text-3xl font-bold">{statistic.value}</h3>
+                <h3 className="text-3xl font-bold">
+                  {statistic.value}
+                </h3>
 
-                <p className="mt-2">{statistic.label}</p>
+                <p className="mt-2">
+                  {statistic.label}
+                </p>
               </Card>
             ))}
           </div>
@@ -209,20 +248,28 @@ function Home() {
       {/* Services */}
       <Section>
         <Container>
-          <h2 className="mb-8 text-3xl font-bold">Our Services</h2>
+          <h2 className="mb-8 text-3xl font-bold">
+            Our Services
+          </h2>
 
           <div className="grid gap-6 md:grid-cols-3">
             {services.map((service) => (
               <Card key={service.title}>
-                <h3 className="text-xl font-semibold">{service.title}</h3>
+                <h3 className="text-xl font-semibold">
+                  {service.title}
+                </h3>
 
-                <p className="mt-4">{service.description}</p>
+                <p className="mt-4">
+                  {service.description}
+                </p>
               </Card>
             ))}
           </div>
 
           <div className="mt-8">
-            <Button variant="outline">Explore All Services</Button>
+            <Button variant="outline">
+              Explore All Services
+            </Button>
           </div>
         </Container>
       </Section>
@@ -230,14 +277,20 @@ function Home() {
       {/* Why Choose Us */}
       <Section background="light">
         <Container>
-          <h2 className="mb-8 text-3xl font-bold">Why Choose Us</h2>
+          <h2 className="mb-8 text-3xl font-bold">
+            Why Choose Us
+          </h2>
 
           <div className="grid gap-6 md:grid-cols-2">
             {whyChooseUs.map((item) => (
               <Card key={item.title}>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl font-semibold">
+                  {item.title}
+                </h3>
 
-                <p className="mt-4">{item.description}</p>
+                <p className="mt-4">
+                  {item.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -247,16 +300,24 @@ function Home() {
       {/* Application Process */}
       <Section>
         <Container>
-          <h2 className="mb-8 text-3xl font-bold">How It Works</h2>
+          <h2 className="mb-8 text-3xl font-bold">
+            How It Works
+          </h2>
 
           <div className="grid gap-6 md:grid-cols-4">
             {applicationProcess.map((item) => (
               <Card key={item.step}>
-                <p className="text-2xl font-bold">{item.step}</p>
+                <p className="text-2xl font-bold">
+                  {item.step}
+                </p>
 
-                <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
+                <h3 className="mt-4 text-xl font-semibold">
+                  {item.title}
+                </h3>
 
-                <p className="mt-4">{item.description}</p>
+                <p className="mt-4">
+                  {item.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -266,18 +327,24 @@ function Home() {
       {/* Testimonials */}
       <Section background="light">
         <Container>
-          <h2 className="mb-8 text-3xl font-bold">Success Stories</h2>
+          <h2 className="mb-8 text-3xl font-bold">
+            Success Stories
+          </h2>
 
           <div className="grid gap-6 md:grid-cols-3">
             {testimonials.map((testimonial) => (
               <Card key={testimonial.name}>
-                <p className="italic">"{testimonial.quote}"</p>
+                <p className="italic">
+                  "{testimonial.quote}"
+                </p>
 
                 <h3 className="mt-6 text-xl font-semibold">
                   {testimonial.name}
                 </h3>
 
-                <p className="mt-2">{testimonial.role}</p>
+                <p className="mt-2">
+                  {testimonial.role}
+                </p>
               </Card>
             ))}
           </div>
@@ -294,9 +361,36 @@ function Home() {
           <div className="grid gap-6 md:grid-cols-2">
             {faqs.map((faq) => (
               <Card key={faq.question}>
-                <h3 className="text-xl font-semibold">{faq.question}</h3>
+                <h3 className="text-xl font-semibold">
+                  {faq.question}
+                </h3>
 
-                <p className="mt-4">{faq.answer}</p>
+                <p className="mt-4">
+                  {faq.answer}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Trusted Partners */}
+      <Section background="light">
+        <Container>
+          <h2 className="mb-8 text-3xl font-bold">
+            Trusted Partners
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-4">
+            {trustedPartners.map((partner) => (
+              <Card key={partner.title}>
+                <h3 className="text-xl font-semibold">
+                  {partner.title}
+                </h3>
+
+                <p className="mt-4">
+                  {partner.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -306,14 +400,18 @@ function Home() {
       {/* CTA */}
       <Section background="dark">
         <Container>
-          <h2 className="text-3xl font-bold">Ready To Start Your Journey?</h2>
+          <h2 className="text-3xl font-bold">
+            Ready To Start Your Journey?
+          </h2>
 
           <p className="mt-4">
             Explore global opportunities with professional guidance.
           </p>
 
           <div className="mt-8">
-            <Button variant="primary">Get Started</Button>
+            <Button variant="primary">
+              Get Started
+            </Button>
           </div>
         </Container>
       </Section>
