@@ -174,7 +174,7 @@ function Home() {
   ];
 
   return (
-    <main>
+    <>
       {/* Hero Section */}
       <Section>
         <Container>
@@ -359,7 +359,7 @@ function Home() {
           </div>
         </Container>
       </Section>
-    </main>
+    </>
   );
 }
 

@@ -23,7 +23,7 @@ function Contact() {
   ];
 
   return (
-    <main>
+    <>
       {/* Hero Section */}
       <Section>
         <Container>
@@ -168,7 +168,7 @@ function Contact() {
           </div>
         </Container>
       </Section>
-    </main>
+    </>
   );
 }
 

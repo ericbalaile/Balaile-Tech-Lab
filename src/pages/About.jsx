@@ -64,7 +64,7 @@ function About() {
   ];
 
   return (
-    <main>
+    <>
       {/* Hero Section */}
       <Section>
         <Container>
@@ -193,7 +193,7 @@ function About() {
           </div>
         </Container>
       </Section>
-    </main>
+    </>
   );
 }
 

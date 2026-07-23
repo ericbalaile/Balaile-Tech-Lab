@@ -56,7 +56,7 @@ function Services() {
   ];
 
   return (
-    <main>
+    <>
       {/* Hero Section */}
       <Section>
         <Container>
@@ -123,7 +123,7 @@ function Services() {
           </div>
         </Container>
       </Section>
-    </main>
+    </>
   );
 }
 
