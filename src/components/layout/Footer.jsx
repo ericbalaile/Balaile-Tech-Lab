@@ -8,12 +8,12 @@ function Footer() {
       path: "/",
     },
     {
-      label: "About",
-      path: "/about",
-    },
-    {
       label: "Services",
       path: "/services",
+    },
+    {
+      label: "About",
+      path: "/about",
     },
     {
       label: "Contact",
