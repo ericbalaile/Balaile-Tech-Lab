@@ -70,9 +70,12 @@ function Contact() {
 
               <form className="mt-8 space-y-6">
                 <div>
-                  <label className="block font-medium">Full Name</label>
+                  <label htmlFor="name" className="block font-medium">
+                    Full Name
+                  </label>
 
                   <input
+                    id="name"
                     type="text"
                     className="mt-2 w-full rounded-lg border p-3"
                     placeholder="Enter your name"
@@ -80,9 +83,12 @@ function Contact() {
                 </div>
 
                 <div>
-                  <label className="block font-medium">Email Address</label>
+                  <label htmlFor="email" className="block font-medium">
+                    Email Address
+                  </label>
 
                   <input
+                    id="email"
                     type="email"
                     className="mt-2 w-full rounded-lg border p-3"
                     placeholder="Enter your email"
@@ -90,10 +96,13 @@ function Contact() {
                 </div>
 
                 <div>
-                  <label className="block font-medium">Phone Number</label>
+                  <label htmlFor="phone" className="block font-medium">
+                    Phone Number
+                  </label>
 
                   <input
-                    type="text"
+                    id="phone"
+                    type="tel"
                     className="mt-2 w-full rounded-lg border p-3"
                     placeholder="Enter your phone number"
                   />
@@ -110,16 +119,21 @@ function Contact() {
                 </div>
 
                 <div>
-                  <label className="block font-medium">Message</label>
+                  <label htmlFor="message" className="block font-medium">
+                    Message
+                  </label>
 
                   <textarea
+                    id="message"
                     className="mt-2 w-full rounded-lg border p-3"
                     rows="5"
                     placeholder="Write your message"
                   />
                 </div>
 
-                <Button variant="primary">Submit Inquiry</Button>
+                <Button type="submit" variant="primary">
+                  Submit Inquiry
+                </Button>
               </form>
             </div>
 
