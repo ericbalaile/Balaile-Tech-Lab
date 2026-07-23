@@ -5,6 +5,13 @@ Design System Theme
 ========================================
 */
 
+@theme {
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #1e3a8a;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+}
+
 :root {
   /* ========================================
      Brand Colors
