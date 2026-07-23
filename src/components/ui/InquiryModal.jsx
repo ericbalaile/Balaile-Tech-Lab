@@ -26,7 +26,7 @@ function InquiryModal({ isOpen, onClose }) {
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-xl shadow-xl w-full max-w-xs p-4 relative"
+        className="bg-white rounded-xl shadow-xl w-full max-w-sm p-4 relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button
