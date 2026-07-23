@@ -201,7 +201,9 @@ function Home() {
           </div>
 
           <div className="mt-8">
-            <Button variant="outline">Explore All Services</Button>
+            <Link to="/services">
+              <Button variant="outline">Explore All Services</Button>
+            </Link>
           </div>
         </Container>
       </Section>
