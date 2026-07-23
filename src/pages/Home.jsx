@@ -22,25 +22,6 @@ function Home() {
     },
   ];
 
-  const statistics = [
-    {
-      value: "10+",
-      label: "Countries",
-    },
-    {
-      value: "500+",
-      label: "Opportunities",
-    },
-    {
-      value: "1000+",
-      label: "Successful Travelers",
-    },
-    {
-      value: "24/7",
-      label: "Support",
-    },
-  ];
-
   const services = [
     {
       title: "Travel Management",
@@ -106,27 +87,6 @@ function Home() {
     },
   ];
 
-  const testimonials = [
-    {
-      quote:
-        "The guidance and support made my international travel journey simple and stress-free.",
-      name: "Sarah M.",
-      role: "International Traveler",
-    },
-    {
-      quote:
-        "Professional assistance throughout the process gave me confidence from application to departure.",
-      name: "John K.",
-      role: "Student Traveler",
-    },
-    {
-      quote:
-        "Reliable service and continuous support helped me achieve my travel goals.",
-      name: "Anna P.",
-      role: "Business Traveler",
-    },
-  ];
-
   const faqs = [
     {
       question: "How do I start my travel journey?",
@@ -152,24 +112,24 @@ function Home() {
 
   const trustedPartners = [
     {
-      title: "International Travel Networks",
+      title: "Travel Planning Guidance",
       description:
-        "Building connections that support smooth and reliable travel experiences.",
+        "Helping clients plan organized journeys with clear, professional support.",
     },
     {
-      title: "Education & Career Partners",
+      title: "International Opportunity Guidance",
       description:
-        "Supporting opportunities for learning, career growth, and international experiences.",
+        "Providing guidance for clients exploring international travel, learning, or work-related opportunities.",
     },
     {
-      title: "Accommodation Partners",
+      title: "Accommodation Planning",
       description:
-        "Helping travelers prepare for comfortable and organized stays.",
+        "Helping travelers prepare for suitable and organized stays.",
     },
     {
-      title: "Corporate & Organization Partners",
+      title: "Corporate Travel Support",
       description:
-        "Supporting professional travel requirements and business needs.",
+        "Supporting business and organizational travel requirements.",
     },
   ];
 
@@ -179,17 +139,17 @@ function Home() {
       <Section>
         <Container>
           <h1 className="text-4xl font-bold md:text-6xl">
-            Your Gateway To Global Opportunities And Experiences
+            Professional Travel Solutions For Every Journey
           </h1>
 
           <p className="mt-6 text-lg">
-            Professional travel solutions connecting individuals and
-            organizations with international opportunities, journeys, and
-            experiences.
+            Plan holidays, business travel, visa support, airport transfers,
+            hotel reservations, and international travel opportunities with
+            professional guidance.
           </p>
 
           <div className="mt-8">
-            <Button variant="primary">Explore Opportunities</Button>
+            <Button variant="primary">Explore Services</Button>
           </div>
         </Container>
       </Section>
@@ -209,21 +169,6 @@ function Home() {
                 <h3 className="text-xl font-semibold">{item.title}</h3>
 
                 <p className="mt-4">{item.description}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* Statistics */}
-      <Section background="light">
-        <Container>
-          <div className="grid gap-6 md:grid-cols-4">
-            {statistics.map((statistic) => (
-              <Card key={statistic.label}>
-                <h3 className="text-3xl font-bold">{statistic.value}</h3>
-
-                <p className="mt-2">{statistic.label}</p>
               </Card>
             ))}
           </div>
@@ -287,27 +232,6 @@ function Home() {
         </Container>
       </Section>
 
-      {/* Testimonials */}
-      <Section background="light">
-        <Container>
-          <h2 className="mb-8 text-3xl font-bold">Success Stories</h2>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.name}>
-                <p className="italic">"{testimonial.quote}"</p>
-
-                <h3 className="mt-6 text-xl font-semibold">
-                  {testimonial.name}
-                </h3>
-
-                <p className="mt-2">{testimonial.role}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
       {/* FAQ Preview */}
       <Section>
         <Container>
@@ -331,7 +255,7 @@ function Home() {
       <Section background="light">
         <Container>
           <h2 className="mb-8 text-3xl font-bold">
-            Our Global Support Network
+            Support Across Your Travel Journey
           </h2>
           <div className="grid gap-6 md:grid-cols-4">
             {trustedPartners.map((partner) => (
@@ -351,7 +275,7 @@ function Home() {
           <h2 className="text-3xl font-bold">Ready To Start Your Journey?</h2>
 
           <p className="mt-4">
-            Explore global opportunities with professional guidance.
+            Plan your next journey with professional travel guidance.
           </p>
 
           <div className="mt-8">
