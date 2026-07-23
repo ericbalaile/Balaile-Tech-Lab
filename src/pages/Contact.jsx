@@ -181,9 +181,7 @@ function Contact() {
             travel plans.
           </p>
 
-          <div className="mt-8">
-            <Button variant="primary" onClick={() => setIsModalOpen(true)}>Inquire Now</Button>
-          </div>
+
         </Container>
       </Section>
     </>
