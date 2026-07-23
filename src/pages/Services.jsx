@@ -1,9 +1,12 @@
-﻿import Container from "../components/ui/Container.jsx";
+﻿import { useState } from "react";
+import Container from "../components/ui/Container.jsx";
 import Section from "../components/ui/Section.jsx";
 import Button from "../components/ui/Button.jsx";
 import Card from "../components/ui/Card.jsx";
+import InquiryModal from "../components/ui/InquiryModal.jsx";
 
 function Services() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const services = [
     {
       title: "Travel Management",
@@ -94,11 +97,11 @@ function Services() {
                 <p className="mt-4">{service.description}</p>
 
                 <h4 className="mt-6 font-semibold">Customer Benefit</h4>
-
                 <p className="mt-2">{service.benefit}</p>
-
                 <div className="mt-6">
-                  <Button variant="outline">{service.cta}</Button>
+                  <Button variant="outline" onClick={() => setIsModalOpen(true)}>
+                    {service.cta}
+                  </Button>
                 </div>
               </Card>
             ))}
@@ -119,7 +122,9 @@ function Services() {
           </p>
 
           <div className="mt-8">
-            <Button variant="primary">Contact Us</Button>
+            <Button variant="primary" onClick={() => setIsModalOpen(true)}>
+              Inquire Now
+            </Button>
           </div>
         </Container>
       </Section>

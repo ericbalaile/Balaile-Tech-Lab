@@ -38,7 +38,6 @@ function Header() {
           <div className="hidden items-center gap-8 md:flex">
             <Navigation links={links} />
 
-            <Button variant="primary">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -57,10 +56,6 @@ function Header() {
         {isOpen && (
           <div className="border-t pb-6 pt-6 md:hidden">
             <Navigation links={links} />
-
-            <div className="mt-6">
-              <Button variant="primary">Get Started</Button>
-            </div>
           </div>
         )}
       </Container>

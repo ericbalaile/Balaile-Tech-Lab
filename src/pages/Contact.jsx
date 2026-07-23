@@ -1,9 +1,12 @@
-﻿import Container from "../components/ui/Container.jsx";
+﻿import { useState } from "react";
+import Container from "../components/ui/Container.jsx";
 import Section from "../components/ui/Section.jsx";
 import Button from "../components/ui/Button.jsx";
 import Card from "../components/ui/Card.jsx";
+import InquiryModal from "../components/ui/InquiryModal.jsx";
 
 function Contact() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const contactOptions = [
     {
       title: "Travel Consultation",
@@ -24,6 +27,7 @@ function Contact() {
 
   return (
     <>
+      <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       {/* Hero Section */}
       <Section>
         <Container>
@@ -132,7 +136,7 @@ function Contact() {
                 </div>
 
                 <Button type="submit" variant="primary">
-                  Submit Inquiry
+                  Send Inquiry
                 </Button>
               </form>
             </div>
@@ -178,7 +182,7 @@ function Contact() {
           </p>
 
           <div className="mt-8">
-            <Button variant="primary">Get Started</Button>
+            <Button variant="primary" onClick={() => setIsModalOpen(true)}>Inquire Now</Button>
           </div>
         </Container>
       </Section>

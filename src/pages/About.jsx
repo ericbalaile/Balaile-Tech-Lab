@@ -1,9 +1,12 @@
-﻿import Container from "../components/ui/Container.jsx";
+﻿import { useState } from "react";
+import Container from "../components/ui/Container.jsx";
 import Section from "../components/ui/Section.jsx";
 import Button from "../components/ui/Button.jsx";
 import Card from "../components/ui/Card.jsx";
+import InquiryModal from "../components/ui/InquiryModal.jsx";
 
 function About() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const approach = [
     {
       title: "Personalized Travel Support",
@@ -65,6 +68,7 @@ function About() {
 
   return (
     <>
+      <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       {/* Hero Section */}
       <Section>
         <Container>
@@ -189,7 +193,7 @@ function About() {
           </p>
 
           <div className="mt-8">
-            <Button variant="primary">Contact Us</Button>
+            <Button variant="primary" onClick={() => setIsModalOpen(true)}>Inquire Now</Button>
           </div>
         </Container>
       </Section>

@@ -33,7 +33,7 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <Container>
-        <div className="grid gap-8 py-12 md:grid-cols-4">
+        <div className="grid gap-8 py-6 md:grid-cols-4">
           {/* Company */}
           <div>
             <h2 className="text-xl font-bold">Global Work and Travel Ltd</h2>

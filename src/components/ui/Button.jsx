@@ -6,6 +6,7 @@ function Button({
   type = "button",
   disabled = false,
   className = "",
+  onClick,
 }) {
   const baseStyles =
     "inline-flex items-center justify-center rounded-md px-6 py-3 font-medium transition-colors duration-300 disabled:cursor-not-allowed disabled:opacity-50";
@@ -24,7 +25,7 @@ function Button({
   ].join(" ");
 
   return (
-    <button type={type} disabled={disabled} className={buttonStyles}>
+    <button type={type} disabled={disabled} className={buttonStyles} onClick={onClick}>
       {children}
     </button>
   );
@@ -36,6 +37,7 @@ Button.propTypes = {
   type: PropTypes.string,
   disabled: PropTypes.bool,
   className: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default Button;
