@@ -15,10 +15,9 @@ The website will contain the following main sections:
 - Home
 - About Us
 - Services
-- Work Opportunities
+- International Opportunities
 - Travel Services
-- Application Process
-- Success Stories
+- Our Process
 - Contact Us
 
 ---
@@ -27,7 +26,7 @@ The website will contain the following main sections:
 
 ## Purpose
 
-Introduce the company, build trust, and guide visitors toward available opportunities.
+Introduce the company, build trust, and guide visitors toward service offerings.
 
 ## Sections
 
@@ -41,7 +40,7 @@ Content:
 
 Goal:
 
-Create a strong first impression and encourage users to explore opportunities.
+Create a strong first impression and encourage users to explore services.
 
 ---
 
@@ -63,9 +62,8 @@ Help visitors understand who the company is.
 
 Content:
 
-- Work opportunities
 - Travel solutions
-- Professional guidance
+- International opportunities guidance
 
 Goal:
 
@@ -92,34 +90,19 @@ Build confidence and trust.
 Content:
 
 - Contact invitation
-- Application guidance
+- Service inquiry guidance
 
 Goal:
 
 Encourage users to take the next step.
 
-### Application Process Preview
+### Our Process Preview
 
 Content:
 
-- Step-by-step application journey
-- Required documents
+- Step-by-step guidance
 - Professional support throughout the process
 
 Goal:
 
-Help users understand the process and feel confident starting their application.
-
----
-
-### Success Stories / Testimonials
-
-Content:
-
-- Customer experiences
-- Success journeys
-- Reviews and achievements
-
-Goal:
-
-Build trust by showing real customer outcomes.
+Help users understand how to engage our services.

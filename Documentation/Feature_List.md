@@ -2,9 +2,9 @@
 
 ## Document Status
 
-Draft Version 0.1
+Draft Version 0.2
 
-This document defines initial website features based on current business understanding and user needs.
+This document defines website features based on current business understanding and professional travel service needs.
 
 ---
 
@@ -14,7 +14,7 @@ This document defines initial website features based on current business underst
 
 Purpose:
 
-Introduce the company and communicate the main value proposition.
+Introduce the company and communicate the value proposition of professional travel solutions.
 
 Requirements:
 
@@ -36,7 +36,6 @@ Requirements:
 - Company background
 - Vision and mission
 - Company values
-- Team information (if available)
 
 ---
 
@@ -44,27 +43,13 @@ Requirements:
 
 Purpose:
 
-Explain available work and travel services.
+Explain available travel and advisory services.
 
 Requirements:
 
 - Service categories
 - Service descriptions
 - Customer benefits
-
----
-
-## Opportunities Section
-
-Purpose:
-
-Present available opportunities.
-
-Requirements:
-
-- Opportunity information
-- Requirements
-- Application guidance
 
 ---
 
@@ -78,25 +63,10 @@ Requirements:
 
 - Contact information
 - Contact form
-- Social media links
 
 ---
 
 # 2. Should Have Features
-
-## Testimonials
-
-Purpose:
-
-Increase customer trust.
-
-Requirements:
-
-- Customer stories
-- Reviews
-- Success experiences
-
----
 
 ## FAQ Section
 
@@ -106,13 +76,13 @@ Answer common customer questions.
 
 Requirements:
 
-- Application questions
+- Service questions
 - Process explanation
-- Requirements
+- Requirements overview
 
 ---
 
-## Blog / Resources
+## Resources
 
 Purpose:
 
@@ -120,33 +90,12 @@ Provide educational content.
 
 Requirements:
 
-- Travel information
-- Work opportunities updates
-- Guides
+- Travel information updates
+- Professional guides
 
 ---
 
 # 3. Could Have Features
-
-## Online Application System
-
-Future possibility:
-
-- User registration
-- Application submission
-- Document upload
-
----
-
-## Customer Dashboard
-
-Future possibility:
-
-- Application tracking
-- Notifications
-- Customer account
-
----
 
 ## CRM Integration
 
@@ -162,6 +111,6 @@ Future possibility:
 
 | Priority    | Features                                          |
 | ----------- | ------------------------------------------------- |
-| Must Have   | Homepage, About, Services, Opportunities, Contact |
-| Should Have | Testimonials, FAQ, Blog                           |
-| Could Have  | Application System, Dashboard, CRM                |
+| Must Have   | Homepage, About, Services, Contact |
+| Should Have | FAQ, Resources                                    |
+| Could Have  | CRM Integration                                   |
