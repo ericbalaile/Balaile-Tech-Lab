@@ -16,6 +16,8 @@ function Button({
     secondary: "bg-secondary text-white hover:opacity-90",
     outline:
       "border border-primary text-primary hover:bg-primary hover:text-white",
+    premium:
+      "border-2 border-accent text-accent hover:bg-accent hover:text-primary transition-all duration-300",
   };
 
   const buttonStyles = [
@@ -33,7 +35,7 @@ function Button({
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  variant: PropTypes.oneOf(["primary", "secondary", "outline"]),
+  variant: PropTypes.oneOf(["primary", "secondary", "outline", "premium"]),
   type: PropTypes.string,
   disabled: PropTypes.bool,
   className: PropTypes.string,

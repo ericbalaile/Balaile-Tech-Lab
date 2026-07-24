@@ -6,10 +6,10 @@ Design System Theme
 */
 
 @theme {
-  --color-primary: #1d4ed8;
-  --color-primary-dark: #1e3a8a;
+  --color-primary: #003366; /* Deep Navy Blue from logo */
+  --color-primary-dark: #001a33;
   --color-secondary: #10b981;
-  --color-accent: #f59e0b;
+  --color-accent: #ffcc00; /* Bright Yellow/Gold from logo */
 }
 
 :root {
@@ -17,10 +17,10 @@ Design System Theme
      Brand Colors
   ======================================== */
 
-  --color-primary: #1d4ed8;
-  --color-primary-dark: #1e3a8a;
+  --color-primary: #003366;
+  --color-primary-dark: #001a33;
   --color-secondary: #10b981;
-  --color-accent: #f59e0b;
+  --color-accent: #ffcc00;
 
   --color-white: #ffffff;
   --color-background: #f8fafc;
@@ -36,7 +36,7 @@ Design System Theme
      Typography
   ======================================== */
 
-  --font-heading: "Poppins", sans-serif;
+  --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Inter", sans-serif;
 
   /* Font Sizes */
@@ -144,4 +144,5 @@ Design System Theme
   --section-sm: 3rem;
   --section-md: 5rem;
   --section-lg: 7rem;
+  --section-xl: 9rem;
 }

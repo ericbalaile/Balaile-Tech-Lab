@@ -22,7 +22,7 @@ function InquiryModal({ isOpen, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-[500] flex items-center justify-center bg-black/20 backdrop-blur-sm p-4"
       onClick={onClose}
     >
       <div

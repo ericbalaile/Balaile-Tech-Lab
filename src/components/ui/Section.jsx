@@ -1,7 +1,12 @@
 ﻿import PropTypes from "prop-types";
 
-function Section({ children, background = "default", className = "" }) {
-  const baseStyles = "py-16 transition-colors duration-300 md:py-20";
+function Section({ children, background = "default", spacing = "default", className = "" }) {
+  const baseStyles = "transition-colors duration-300";
+
+  const spacingStyles = {
+    default: "py-16 md:py-20",
+    cinematic: "py-24 md:py-[--section-xl]",
+  };
 
   const backgrounds = {
     default: "",
@@ -11,6 +16,7 @@ function Section({ children, background = "default", className = "" }) {
 
   const sectionStyles = [
     baseStyles,
+    spacingStyles[spacing] || spacingStyles.default,
     backgrounds[background] || backgrounds.default,
     className,
   ]
@@ -23,6 +29,7 @@ function Section({ children, background = "default", className = "" }) {
 Section.propTypes = {
   children: PropTypes.node.isRequired,
   background: PropTypes.oneOf(["default", "light", "dark"]),
+  spacing: PropTypes.oneOf(["default", "cinematic"]),
   className: PropTypes.string,
 };
 
