@@ -1,166 +1,133 @@
-# Global Work and Travel Ltd Website
+# 🚀 Balaile Tech Lab
 
-## Project Overview
+## Building Technology Solutions for Tanzania and Beyond
 
-A professional corporate website for Global Work and Travel Ltd designed to establish a strong digital presence, showcase international work and travel travel services, and improve communication with clients.
-
-The project focuses on creating a modern, responsive, accessible, and user-centered digital platform that represents the company's services, values, and customer journey.
+Welcome to **Balaile Tech Lab** — a technology journey focused on designing, building, and delivering practical digital solutions that solve real-world problems.
 
 ---
 
-## Business Purpose
+# 👨‍💻 About Me
 
-The website will help Global Work and Travel Ltd:
+**Eric Balaile**
 
-- Present its services professionally online
-- Build trust with potential clients
-- Explain work and travel travel services clearly
-- Guide users through the application journey
-- Improve customer communication and engagement
+Computer Science Graduate | Aspiring Product Engineer | Tech Founder
 
----
+My goal is to become a Product Engineer capable of building:
 
-## Project Objectives
-
-- Create a professional company website
-- Showcase work and travel services
-- Provide clear information about available travel services
-- Improve user experience and accessibility
-- Establish a foundation for future digital services
+- Modern websites
+- Enterprise Resource Planning (ERP) systems
+- Mobile applications
+- AI-powered solutions
+- Digital platforms that create impact
 
 ---
 
-## Current Phase
+# 🌍 Vision
 
-Frontend Implementation Phase
-
-The project has completed:
-
-- Business research
-- Requirements analysis
-- Information architecture
-- Design planning
-- Brand direction
-- Frontend architecture planning
-
-Current development focus:
-
-- React application setup
-- Component architecture
-- UI implementation
-- Responsive design
-- Testing
-- Deployment preparation
+To build technology solutions that empower individuals, businesses, and organizations in Tanzania and beyond through innovation, software engineering, and artificial intelligence.
 
 ---
 
-## Technology Stack
+# 🎯 Mission
 
-Frontend:
+Balaile Tech Lab focuses on:
+
+- Learning modern software engineering practices
+- Building useful digital products
+- Solving local problems through technology
+- Creating scalable software solutions
+- Growing into a technology company
+
+---
+
+# 🛠️ Technology Focus
+
+## Currently Learning
+
+- HTML
+- CSS
+- JavaScript
+- Git & GitHub
+- Software Engineering Practices
+- Database Fundamentals
+
+
+## Future Focus
+
+- Backend Development
+- Full-Stack Applications
+- ERP Systems
+- Mobile Applications
+- Artificial Intelligence
+- Cloud Technologies
+
+---
+
+## Projects
+
+### Global Work & Travel Ltd Website
+
+Location:
+
+02_Projects/Global_Work_and_Travel_Website
+
+Technology Stack:
 
 - React 19
 - Vite
-- JavaScript
-- ESLint
-
-Planned additions:
-
-- Tailwind CSS
+- Tailwind CSS v4
 - React Router
-- Testing tools
-- Deployment configuration
+- Supabase Storage
+- Vercel Deployment
+
+Current Status:
+
+Production deployment preparation phase.
 
 ---
 
-## Project Structure
-
-    Global_Work_and_Travel_Website
-
-    +-- Documentation
-    +-- Resources
-    +-- Tests
-    +-- public
-    +-- src
-    +-- package.json
-    +-- vite.config.js
-    +-- README.md
+# 📂 Repository Structure
 
 ---
 
-## Development Workflow
+# 🚀 Development Journey
 
-Research
+This repository documents my journey from building strong software engineering foundations to becoming a Product Engineer and Technology Founder.
 
-?
+Milestones:
 
-Documentation
-
-?
-
-Architecture
-
-?
-
-Design Planning
-
-?
-
-Frontend Development
-
-?
-
-Testing
-
-?
-
-Deployment
+✅ Developer workspace setup  
+✅ Documentation system created  
+✅ Git workflow established  
+✅ GitHub repository connected  
 
 ---
 
-## Development Setup
+# 📌 Future Projects
 
-Install dependencies:
+Coming soon:
 
-npm install
-
-Start development server:
-
-npm run dev
-
-Create production build:
-
-npm run build
-
-Run code quality checks:
-
-npm run lint
+- Web Applications
+- Business Management Systems
+- ERP Solutions
+- AI-based Tools
+- Digital Platforms
 
 ---
 
-## Git Workflow
+# 📖 Learning Philosophy
 
-The project follows a professional Git workflow:
+> Build. Learn. Improve. Repeat.
 
-- Clean commits
-- Feature-based development
-- Regular verification before committing changes
-- Documentation maintained alongside code
+Every project is an opportunity to develop better engineering skills and create meaningful solutions.
 
 ---
 
-## Project Status
+# 📫 Contact
 
-Active Frontend Development Phase
+GitHub:
+https://github.com/ericbalaile
 
 ---
 
-## Future Roadmap
-
-Future improvements may include:
-
-- Complete responsive website pages
-- CMS integration
-- Application workflow features
-- Backend services
-- Analytics integration
-- Production deployment
+© 2026 Balaile Tech Lab
