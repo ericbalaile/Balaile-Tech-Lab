@@ -7,13 +7,15 @@ function Button({
   disabled = false,
   className = "",
   onClick,
+  as: Component = "button",
+  ...props
 }) {
   const baseStyles =
-    "inline-flex items-center justify-center rounded-md px-6 py-3 font-medium transition-colors duration-300 disabled:cursor-not-allowed disabled:opacity-50";
+    "inline-flex items-center justify-center rounded-md px-6 py-3 font-medium transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50";
 
   const variants = {
-    primary: "bg-primary text-white hover:opacity-90",
-    secondary: "bg-secondary text-white hover:opacity-90",
+    primary: "bg-primary text-white hover:bg-primary/90",
+    secondary: "bg-secondary text-white hover:bg-secondary/90",
     outline:
       "border border-primary text-primary hover:bg-primary hover:text-white",
     premium:
@@ -26,8 +28,16 @@ function Button({
     className,
   ].join(" ");
 
+  if (Component !== "button") {
+    return (
+      <Component className={buttonStyles} {...props}>
+        {children}
+      </Component>
+    );
+  }
+
   return (
-    <button type={type} disabled={disabled} className={buttonStyles} onClick={onClick}>
+    <button type={type} disabled={disabled} className={buttonStyles} onClick={onClick} {...props}>
       {children}
     </button>
   );
@@ -40,6 +50,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   className: PropTypes.string,
   onClick: PropTypes.func,
+  as: PropTypes.elementType,
 };
 
 export default Button;

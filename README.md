@@ -1,8 +1,8 @@
-﻿# Global Work and Travel Ltd Website
+# Global Work and Travel Ltd Website
 
 ## Project Overview
 
-A professional corporate website for Global Work and Travel Ltd designed to establish a strong digital presence, showcase international work and travel opportunities, and improve communication with clients.
+A professional corporate website for Global Work and Travel Ltd designed to establish a strong digital presence, showcase international work and travel travel services, and improve communication with clients.
 
 The project focuses on creating a modern, responsive, accessible, and user-centered digital platform that represents the company's services, values, and customer journey.
 
@@ -14,7 +14,7 @@ The website will help Global Work and Travel Ltd:
 
 - Present its services professionally online
 - Build trust with potential clients
-- Explain work and travel opportunities clearly
+- Explain work and travel travel services clearly
 - Guide users through the application journey
 - Improve customer communication and engagement
 
@@ -24,7 +24,7 @@ The website will help Global Work and Travel Ltd:
 
 - Create a professional company website
 - Showcase work and travel services
-- Provide clear information about available opportunities
+- Provide clear information about available travel services
 - Improve user experience and accessibility
 - Establish a foundation for future digital services
 
@@ -76,14 +76,14 @@ Planned additions:
 
     Global_Work_and_Travel_Website
 
-    ├── Documentation
-    ├── Resources
-    ├── Tests
-    ├── public
-    ├── src
-    ├── package.json
-    ├── vite.config.js
-    └── README.md
+    +-- Documentation
+    +-- Resources
+    +-- Tests
+    +-- public
+    +-- src
+    +-- package.json
+    +-- vite.config.js
+    +-- README.md
 
 ---
 
@@ -91,27 +91,27 @@ Planned additions:
 
 Research
 
-↓
+?
 
 Documentation
 
-↓
+?
 
 Architecture
 
-↓
+?
 
 Design Planning
 
-↓
+?
 
 Frontend Development
 
-↓
+?
 
 Testing
 
-↓
+?
 
 Deployment
 

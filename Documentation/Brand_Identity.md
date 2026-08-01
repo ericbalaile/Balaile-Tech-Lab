@@ -48,7 +48,7 @@ Supporting clients in achieving their travel goals through professional guidance
 
 ## Global Connection
 
-Connecting people, cultures, and opportunities across local and international destinations.
+Connecting people, cultures, and travel services across local and international destinations.
 
 ---
 
@@ -73,7 +73,7 @@ The brand should make customers feel confident, supported, and motivated through
 
 - Individuals seeking reliable travel solutions
 - Families planning domestic or international journeys
-- Young professionals and graduates seeking international opportunities and travel experiences
+- Young professionals and graduates seeking international travel services and travel experiences
 - Travelers interested in holiday experiences and cultural exploration
 
 ## Secondary Audience
@@ -102,7 +102,7 @@ All communication should build trust, provide clarity, and guide customers throu
 
 Global Work and Travel Ltd exists to bridge the gap between travelers and reliable travel solutions.
 
-Through professional guidance, structured processes, and customer-focused services, the company helps individuals and organizations discover opportunities, manage journeys, and create memorable travel experiences.
+Through professional guidance, structured processes, and customer-focused services, the company helps individuals and organizations discover travel services, manage journeys, and create memorable travel experiences.
 
 The brand represents trust, connection, and confidence in every journey.
 
@@ -122,7 +122,7 @@ Travel planning should feel organized, clear, and stress-free.
 
 ## Inspiration
 
-The brand should encourage customers to explore new destinations and opportunities.
+The brand should encourage customers to explore new destinations and travel services.
 
 ## Excellence
 

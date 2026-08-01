@@ -1,13 +1,15 @@
 import Container from "../../ui/Container.jsx";
-import { services } from "../../../data/servicesData.js";
+import { assets } from "../../../config/assets.js";
 
 function ServicesHero() {
   return (
     <section className="relative h-[60vh] w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1544620347-c4fd6a3d5957?q=80&w=2069&auto=format&fit=crop" 
+          src={assets.hero.services}
           alt="Services Hero" 
+          fetchPriority="high"
+          loading="eager"
           className="h-full w-full object-cover" 
         />
       </div>

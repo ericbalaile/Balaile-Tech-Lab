@@ -1,25 +1,42 @@
-import { useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button.jsx";
 import FeatureList from "./FeatureList.jsx";
 import FaqAccordion from "./FaqAccordion.jsx";
 
 function ServiceDetailsModal({ isOpen, onClose, service, onInquire }) {
+  const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
+  const gallery = service?.gallery || [];
+  const coverImage = service?.image;
+
+  // Preload next image and update index
+  const nextSlide = useCallback(() => {
+    if (gallery.length <= 1) return;
+    
+    const nextIndex = (currentGalleryIndex + 1) % gallery.length;
+    const nextImageUrl = gallery[nextIndex];
+    
+    const img = new Image();
+    img.src = nextImageUrl;
+    img.onload = () => {
+      setCurrentGalleryIndex(nextIndex);
+    };
+  }, [currentGalleryIndex, gallery]);
+
+  // Autoplay Effect
   useEffect(() => {
-    const handleEscape = (e) => {
-      if (e.key === "Escape") onClose();
-    };
+    if (!isOpen || gallery.length <= 1) return;
+    const interval = setInterval(nextSlide, 6000);
+    return () => clearInterval(interval);
+  }, [isOpen, gallery.length, nextSlide]);
 
-    if (isOpen) {
-      document.addEventListener("keydown", handleEscape);
-      document.body.style.overflow = "hidden";
-    }
+  // Reset index on open
+  useEffect(() => {
+    if (isOpen) setCurrentGalleryIndex(0);
+  }, [isOpen]);
 
-    return () => {
-      document.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = "unset";
-    };
-  }, [isOpen, onClose]);
+  // Fallback to cover if gallery is missing
+  const activeImage = gallery.length > 0 ? gallery[currentGalleryIndex] : coverImage;
 
   if (!isOpen || !service) return null;
 
@@ -27,77 +44,98 @@ function ServiceDetailsModal({ isOpen, onClose, service, onInquire }) {
 
   return (
     <div
-      className="fixed inset-0 z-[500] flex items-center justify-center bg-black/40 backdrop-blur-sm p-4"
+      className={`fixed inset-0 z-[600] flex items-center justify-center p-4 md:p-8 transition-all duration-300 ease-out ${isOpen ? 'bg-black/60 backdrop-blur-sm opacity-100' : 'bg-transparent opacity-0 pointer-events-none'}`}
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-3xl relative max-h-[90vh] overflow-hidden flex flex-col"
+        className={`bg-white rounded-3xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden flex flex-col md:flex-row transition-all duration-300 ease-out ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
         onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
       >
-        {/* Sticky Header */}
-        <div className="flex items-center justify-between p-6 border-b">
-          <h2 className="text-2xl font-bold text-gray-900">{service.title}</h2>
-          <button
-            onClick={onClose}
-            className="text-gray-500 hover:text-gray-900 text-3xl"
-          >
-            &times;
-          </button>
+        {/* Left Column - Gallery */}
+        <div className="hidden md:flex w-2/5 relative overflow-hidden bg-gray-900">
+          <img 
+            key={activeImage}
+            src={activeImage} 
+            alt={service.title} 
+            className="w-full h-full object-cover transition-opacity duration-1000"
+            onError={(e) => { e.target.src = coverImage; }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 to-transparent" />
+          
+          <div className="absolute top-8 left-8">
+            <span className="bg-[#C5A059] text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+              Gallery
+            </span>
+          </div>
         </div>
 
-        {/* Scrollable Content */}
-        <div className="overflow-y-auto p-6 space-y-8">
-          {/* Hero Placeholder */}
-          <div className="h-64 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 italic">
-            [High-quality image required: {service.title.toLowerCase().replace(/\s+/g, '-')}.jpg]
+        {/* Right Column - Content */}
+        <div className="flex-grow flex flex-col w-full md:w-3/5 overflow-hidden">
+          {/* Header */}
+          <div className="p-8 flex justify-between items-center border-b border-gray-100">
+            <h2 className="font-heading text-3xl font-medium text-[#0F172A]">{service.title}</h2>
+            <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Close">
+              <svg className="w-6 h-6 text-[#0F172A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
           </div>
 
-          <p className="text-lg text-gray-600">{service.description}</p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <section>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Overview</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{details.overview}</p>
-              </section>
-              <section>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Process</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{details.process}</p>
-              </section>
-            </div>
+          {/* Content */}
+          <div className="flex-grow overflow-y-auto p-8 space-y-10">
+            <p className="text-lg text-slate-700 leading-relaxed">{service.description}</p>
             
-            <div className="space-y-6">
+            <section>
+                <h3 className="font-heading text-xl font-medium text-[#0F172A] mb-4 uppercase tracking-wider text-sm">Overview</h3>
+                <p className="text-slate-600 leading-relaxed text-sm">{details.overview}</p>
+            </section>
+
+            <section>
+                <h3 className="font-heading text-xl font-medium text-[#0F172A] mb-4 uppercase tracking-wider text-sm">Process</h3>
+                <p className="text-slate-600 leading-relaxed text-sm">{details.process}</p>
+            </section>
+
+            <section>
+              <h3 className="font-heading text-xl font-medium text-[#0F172A] mb-4 uppercase tracking-wider text-sm">What's Included</h3>
+              <FeatureList items={details.included} />
+            </section>
+
+            <section>
+              <h3 className="font-heading text-xl font-medium text-[#0F172A] mb-4 uppercase tracking-wider text-sm">Why Choose Us</h3>
+              <div className="grid grid-cols-1 gap-3">
+                {details.benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center gap-3 p-3 bg-[#F8FAFC] rounded-lg text-sm text-slate-600">
+                    <span className="text-[#C5A059]">✦</span>
+                    {benefit}
+                  </div>
+                ))}
+              </div>
+            </section>
+            
+            {details.notes && (
+                <section>
+                    <h3 className="font-heading text-xl font-medium text-[#0F172A] mb-4 uppercase tracking-wider text-sm">Important Notes</h3>
+                    <p className="text-slate-600 leading-relaxed text-sm">{details.notes}</p>
+                </section>
+            )}
+
+            {details.faqs && details.faqs.length > 0 && (
               <section>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">What's Included</h3>
-                <FeatureList items={details.included} />
+                <h3 className="font-heading text-xl font-medium text-[#0F172A] mb-4 uppercase tracking-wider text-sm">Frequently Asked Questions</h3>
+                <FaqAccordion faqs={details.faqs} />
               </section>
-              <section>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Benefits</h3>
-                <FeatureList items={details.benefits} />
-              </section>
-            </div>
+            )}
           </div>
 
-          {details.notes && (
-            <section className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-md font-semibold text-gray-900 mb-2">Important Notes</h3>
-              <p className="text-gray-600 text-sm">{details.notes}</p>
-            </section>
-          )}
-
-          {details.faqs && details.faqs.length > 0 && (
-            <section>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Frequently Asked Questions</h3>
-              <FaqAccordion faqs={details.faqs} />
-            </section>
-          )}
-        </div>
-
-        {/* Sticky Footer */}
-        <div className="p-6 border-t bg-gray-50">
-          <Button variant="primary" className="w-full py-4 text-lg" onClick={onInquire}>
-            Inquire Now
-          </Button>
+          {/* Footer */}
+          <div className="p-8 border-t border-gray-100 flex gap-4">
+            <Button variant="premium" className="flex-grow py-3 font-heading tracking-wider uppercase" onClick={onInquire}>
+              Inquire Now
+            </Button>
+            <Button variant="outline" className="px-6 py-3" onClick={onClose}>
+              Close
+            </Button>
+          </div>
         </div>
       </div>
     </div>

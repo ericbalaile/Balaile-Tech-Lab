@@ -1,20 +1,23 @@
+import { assets } from "../config/assets.js";
+
 export const services = [
   {
-    title: "Travel Management",
-    description: "Comprehensive coordination for individuals and corporate clients.",
-    benefit: "Efficiency, stress reduction, and expert oversight.",
-    cta: "Request Travel Support",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd6a3d5957?q=80&w=2069&auto=format&fit=crop",
+    title: "Flight Reservations",
+    description: "Professional assistance with domestic and international flight bookings.",
+    benefit: "Efficiency, fare options, and expert reservation support.",
+    cta: "Request Flight Support",
+    image: assets.services.flightReservations.cover,
+    gallery: assets.services.flightReservations.gallery,
     details: {
-      overview: "Strategic travel planning for individuals and organizations. We streamline complex travel needs into simple, organized, and cost-effective itineraries.",
-      included: ["Custom itinerary planning", "Booking management", "Travel policy compliance", "24/7 support access"],
-      targetAudience: "Business travelers, frequent flyers, and busy professionals.",
-      process: "Consultation -> Needs Assessment -> Itinerary Creation -> Booking -> Finalization.",
-      benefits: ["Time efficiency", "Reduced stress", "Expert oversight", "Cost optimization"],
-      notes: "Advanced booking is highly recommended for all international travel.",
+      overview: "Professional assistance for domestic and international air travel. We manage the complexity of finding the right fare options, routes, and schedule guidance for business and leisure travel.",
+      included: ["Domestic & international bookings", "One-way, return & multi-city itineraries", "Fare comparison support", "Schedule guidance"],
+      targetAudience: "Business and leisure travelers.",
+      process: "Consultation -> Needs Assessment -> Fare Curation -> Reservation -> Finalization.",
+      benefits: ["Fare options support", "Route and schedule optimization", "Booking management", "Travel documentation guidance"],
+      notes: "Early booking is recommended to secure preferred routes and fares.",
       faqs: [
-        { q: "Can you handle complex multi-city trips?", a: "Yes, we specialize in multi-stop itinerary planning." },
-        { q: "Do you offer travel insurance advice?", a: "We provide guidance on essential travel insurance types for your specific journey." }
+        { q: "Can you assist with multi-city bookings?", a: "Yes, we specialize in multi-city itinerary planning." },
+        { q: "Do you handle changes or rebooking?", a: "Yes, we assist with managing reservation changes within airline guidelines." }
       ]
     }
   },
@@ -23,7 +26,8 @@ export const services = [
     description: "Curated leisure travel experiences designed for you.",
     benefit: "Stress-free planning and personalized itineraries.",
     cta: "Explore Packages",
-    image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop",
+    image: assets.services.holidaysTours.cover,
+    gallery: assets.services.holidaysTours.gallery,
     details: {
       overview: "Curated leisure experiences tailored to your interests. We handle all logistics—from transportation to accommodation—to ensure a seamless vacation.",
       included: ["Personalized package design", "Guided tour options", "Destination research", "Concierge services"],
@@ -42,7 +46,8 @@ export const services = [
     description: "Professional coordination for business gatherings and retreats.",
     benefit: "Seamless delivery and professional standards.",
     cta: "Plan Your Event",
-    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop",
+    image: assets.services.corporateEvents.cover,
+    gallery: assets.services.corporateEvents.gallery,
     details: {
       overview: "Professional coordination for corporate gatherings, meetings, and conferences. We manage logistics to ensure successful professional events.",
       included: ["Venue sourcing", "Logistics coordination", "Budget management", "On-site support"],
@@ -61,7 +66,8 @@ export const services = [
     description: "Professional advisory guidance for visa applications.",
     benefit: "Clarity on requirements and reduced application errors.",
     cta: "Request Visa Support",
-    image: "https://images.unsplash.com/photo-1554734864-616c3971c26c?q=80&w=2070&auto=format&fit=crop",
+    image: assets.services.visaAssistance.cover,
+    gallery: assets.services.visaAssistance.gallery,
     details: {
       overview: "Professional advisory guidance for visa applications. We help you understand requirements, prepare documentation, and navigate the application process.",
       included: ["Requirement clarification", "Document checklist", "Application review guidance"],
@@ -76,20 +82,21 @@ export const services = [
     }
   },
   {
-    title: "Airport Transfers",
-    description: "Reliable transportation between airports and destinations.",
-    benefit: "Safety, punctuality, and organized arrivals.",
-    cta: "Arrange Transfer",
-    image: "https://images.unsplash.com/photo-1582003889482-f075d6918116?q=80&w=2070&auto=format&fit=crop",
+    title: "Car Hire",
+    description: "Flexible solutions: Self Drive or Chauffeur Services.",
+    benefit: "Personalized freedom or professional convenience.",
+    cta: "Book Your Ride",
+    image: assets.services.carHire.cover,
+    gallery: assets.services.carHire.gallery,
     details: {
-      overview: "Reliable and convenient ground transportation. We ensure smooth transitions between airports and your destination with vetted drivers.",
-      included: ["Pre-booked transportation", "Flight tracking", "Meet-and-greet options"],
-      targetAudience: "All travelers prioritizing comfort and punctuality.",
-      process: "Booking -> Confirmation -> Real-time Flight Tracking -> Pickup.",
-      benefits: ["Safety", "Punctuality", "Comfort"],
-      notes: "Please provide flight details at least 24 hours in advance.",
+      overview: "Flexible car hire solutions designed for business and leisure travellers. Choose the freedom of self-drive or enjoy a professional chauffeur service for a comfortable and reliable journey.",
+      included: ["Self Drive: Flexible rental periods, well-maintained vehicles, personal travel convenience.", "Chauffeur Services: Professional drivers, airport, hotel and city transport, business and executive travel."],
+      targetAudience: "All travelers prioritizing comfort, reliability, and convenience.",
+      process: "Requirement Selection -> Booking -> Confirmation -> Journey Execution.",
+      benefits: ["Flexibility", "Reliability", "Comfort", "Professionalism"],
+      notes: "Please provide travel details at least 24 hours in advance.",
       faqs: [
-        { q: "What if my flight is delayed?", a: "We track your flight and adjust the pickup time accordingly." }
+        { q: "What if my flight is delayed for chauffeur services?", a: "We track your flight and adjust the pickup time accordingly." }
       ]
     }
   },
@@ -98,7 +105,8 @@ export const services = [
     description: "Personalized accommodation planning and booking.",
     benefit: "Secure bookings and location convenience.",
     cta: "Book Accommodation",
-    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop",
+    image: assets.services.accommodation.cover,
+    gallery: assets.services.accommodation.gallery,
     details: {
       overview: "Personalized accommodation planning. We identify and book suitable hotels based on your specific requirements, location, and budget.",
       included: ["Accommodation search", "Booking management", "Amenity verification"],
@@ -116,18 +124,22 @@ export const services = [
 export const servicesProcess = [
   {
     title: "Initial Consultation",
+    icon: "consultation",
     description: "Connect with our specialists to define your unique travel requirements, goals, and logistics constraints."
   },
   {
     title: "Tailored Planning",
-    description: "Our experts design a custom travel solution, curating accommodations, transfers, and specific itineraries tailored to you."
+    icon: "planning",
+    description: "Our experts design a custom travel solution, curating accommodations, ground transport, and specific itineraries tailored to you."
   },
   {
     title: "Meticulous Preparation",
+    icon: "preparation",
     description: "We handle the details—providing guidance on document checklist requirements and finalizing travel ticketing logistics."
   },
   {
     title: "Journey Support",
-    description: "Travel with confidence knowing your ground transfers, stays, and professional support networks are fully coordinated."
+    icon: "journey",
+    description: "Travel with confidence knowing your ground transport, stays, and professional support networks are fully coordinated."
   }
 ];

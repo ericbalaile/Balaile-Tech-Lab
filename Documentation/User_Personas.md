@@ -10,7 +10,7 @@ Personas will be validated and updated after receiving official client informati
 
 ---
 
-# Persona 1: Student Seeking Work & Travel Opportunities
+# Persona 1: Student Seeking Work & Travel travel services
 
 ## Profile
 
@@ -28,13 +28,13 @@ University student / recent graduate
 
 Description:
 
-A young person looking for international work, travel, internship, or learning opportunities.
+A young person looking for international work, travel, internship, or learning travel services.
 
 ---
 
 ## Goals
 
-- Find trusted work and travel opportunities
+- Find trusted work and travel travel services
 - Understand available programs
 - Learn application requirements
 - Contact the company easily
@@ -44,7 +44,7 @@ A young person looking for international work, travel, internship, or learning o
 ## Challenges
 
 - Lack of reliable information
-- Difficulty identifying trusted opportunities
+- Difficulty identifying trusted travel services
 - Fear of scams
 - Unclear application process
 
@@ -59,7 +59,7 @@ A young person looking for international work, travel, internship, or learning o
 
 ---
 
-# Persona 2: Young Professional Seeking International Opportunities
+# Persona 2: Young Professional Seeking International travel services
 
 ## Profile
 
@@ -77,13 +77,13 @@ Working professional
 
 Description:
 
-A professional looking for career growth, international exposure, or work opportunities abroad.
+A professional looking for career growth, international exposure, or work travel services abroad.
 
 ---
 
 ## Goals
 
-- Discover international opportunities
+- Discover international travel services
 - Understand eligibility requirements
 - Apply through a trusted organization
 
@@ -92,7 +92,7 @@ A professional looking for career growth, international exposure, or work opport
 ## Challenges
 
 - Limited knowledge about international processes
-- Difficulty finding verified opportunities
+- Difficulty finding verified travel services
 - Lack of guidance
 
 ---
@@ -100,7 +100,7 @@ A professional looking for career growth, international exposure, or work opport
 ## Needs
 
 - Professional company information
-- Clear opportunities listing
+- Clear travel services listing
 - Application support
 - Fast communication
 
@@ -127,7 +127,7 @@ An organization looking for a reliable partner for work and travel programs.
 ## Goals
 
 - Understand company capabilities
-- Evaluate partnership opportunities
+- Evaluate partnership travel services
 - Establish professional collaboration
 
 ---
@@ -153,8 +153,8 @@ An organization looking for a reliable partner for work and travel programs.
 
 | Persona            | Main Goal                 | Main Need                |
 | ------------------ | ------------------------- | ------------------------ |
-| Student            | Find opportunities abroad | Clear guidance and trust |
-| Young Professional | Career opportunities      | Professional support     |
+| Student            | Find travel services abroad | Clear guidance and trust |
+| Young Professional | Career travel services      | Professional support     |
 | Business Partner   | Collaboration             | Company credibility      |
 
 ---

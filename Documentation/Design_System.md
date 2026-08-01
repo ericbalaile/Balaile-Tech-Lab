@@ -171,7 +171,7 @@ Examples:
 Used for:
 
 - Services
-- Opportunities
+- travel services
 - Testimonials
 
 Card principles:

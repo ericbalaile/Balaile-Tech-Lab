@@ -55,7 +55,7 @@ Help users understand available services.
 
 ---
 
-# 5. Opportunities Page Wireframe
+# 5. travel services Page Wireframe
 
 ## Layout Structure
 

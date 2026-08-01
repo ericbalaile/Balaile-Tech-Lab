@@ -37,7 +37,7 @@ Users should immediately feel that:
 
 - The company is legitimate.
 - The process is clear.
-- Opportunities are accessible.
+- travel services are accessible.
 - Support is available.
 - Applying is simple.
 
@@ -66,7 +66,7 @@ Primary Navigation:
 - About
 - Services
 - Destinations
-- Opportunities
+- travel services
 - Success Stories
 - FAQ
 - Contact

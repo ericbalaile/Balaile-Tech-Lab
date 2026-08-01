@@ -28,20 +28,20 @@ export const homeData = {
   },
   process: [
     {
-      title: "Consultation",
-      description: "Define your travel goals through a detailed professional consultation.",
+      title: "Discover",
+      description: "We take time to understand your travel goals, preferences, and requirements.",
     },
     {
-      title: "Planning",
-      description: "Customized itinerary design tailored to your specific requirements.",
+      title: "Design",
+      description: "We create a personalised travel solution tailored to your itinerary, budget, and expectations.",
     },
     {
-      title: "Preparation",
-      description: "Expert assistance with documentation, logistics, and planning.",
+      title: "Coordinate",
+      description: "We manage flights, accommodation, visa assistance, transportation, and every important travel detail.",
     },
     {
-      title: "Journey",
-      description: "Professional support ensures a seamless and confident travel experience.",
+      title: "Experience",
+      description: "Enjoy a seamless, stress-free journey supported by our team from departure to destination.",
     },
   ],
   cta: {

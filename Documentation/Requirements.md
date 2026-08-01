@@ -26,7 +26,7 @@ Users should be able to:
 
 - Understand the company services quickly.
 - Navigate through website sections easily.
-- View available travel and work opportunities.
+- View available travel and work travel services.
 - Find contact information.
 - Submit inquiries through available contact channels.
 

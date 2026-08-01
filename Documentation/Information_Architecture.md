@@ -15,7 +15,7 @@ The structure is based on current business understanding, user personas, and fea
 The website should help users:
 
 - Understand Global Work and Travel Ltd services
-- Discover available opportunities
+- Discover available travel services
 - Build trust in the company
 - Contact the company easily
 - Take the next step toward application
@@ -39,13 +39,13 @@ Main Sections:
 - Hero section
 - Company introduction
 - Service highlights
-- Featured opportunities
+- Featured travel services
 - Why choose us
 - Call-to-action
 
 Primary User Action:
 
-Contact company / Explore opportunities
+Contact company / Explore travel services
 
 ---
 
@@ -76,9 +76,9 @@ Explain available services.
 
 Content:
 
-- Work opportunities
+- Work travel services
 - Travel programs
-- Student opportunities
+- Student travel services
 - Other services
 
 Primary User Action:
@@ -87,15 +87,15 @@ Explore available options
 
 ---
 
-## Opportunities Page
+## travel services Page
 
 Purpose:
 
-Present available programs and opportunities.
+Present available programs and travel services.
 
 Content:
 
-- Opportunity details
+- travel services details
 - Requirements
 - Benefits
 - Application information
@@ -211,7 +211,7 @@ Main CTA:
 
 Secondary CTAs:
 
-- Explore Opportunities
+- Explore travel services
 - Contact Us
 - Learn More
 
@@ -249,7 +249,7 @@ Learns about company and services
 
 ↓
 
-Explores available opportunities
+Explores available travel services
 
 ↓
 

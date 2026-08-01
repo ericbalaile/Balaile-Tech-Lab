@@ -15,7 +15,7 @@ function Home() {
     <>
       <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       
-      <HomeHero />
+      <HomeHero onOpenInquiry={() => setIsModalOpen(true)} />
       <HomePhilosophy />
       <HomeServices />
       <HomeApproach />

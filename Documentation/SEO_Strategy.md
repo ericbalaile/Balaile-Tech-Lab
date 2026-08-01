@@ -40,7 +40,7 @@ SEO strategy should focus on understanding what users are looking for.
 Possible search intent:
 
 - Travel planning support
-- International travel opportunities
+- International travel travel services
 - Visa assistance
 - Holiday packages
 
@@ -164,16 +164,16 @@ SEO Focus:
 
 ---
 
-## Opportunities
+## travel services
 
 Purpose:
 
-Present available opportunities.
+Present available travel services.
 
 SEO Focus:
 
-- International opportunities
-- Work opportunities
+- International travel services
+- Work travel services
 - Travel experiences
 
 ---

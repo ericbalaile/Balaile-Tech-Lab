@@ -1,8 +1,10 @@
+import { assets } from "../config/assets.js";
+
 export const aboutData = {
   hero: {
     title: "Committed to Professional Excellence",
     subtitle: "Creating seamless travel experiences through integrity, reliability, and personalized care.",
-    image: "https://images.unsplash.com/photo-1488646953014-850444319323?q=80&w=2070&auto=format&fit=crop",
+    image: assets.hero.about,
   },
   story: {
     title: "Our Journey",
@@ -18,8 +20,8 @@ export const aboutData = {
   ],
   values: [
     { title: "Integrity", desc: "Honest communication and responsible service delivery." },
-    { title: "Innovation", desc: "Finding better ways to improve travel experiences." },
-    { title: "Authenticity", desc: "Genuine support focused on real customer needs." },
+    { title: "Innovative", desc: "Keeping abreast of all technological opportunities to ensure the best quality of service." },
+    { title: "Authentic", desc: "Genuine communication through our services with our clients." },
     { title: "Reliability", desc: "Dependable support throughout the travel journey." },
   ],
   trust: [
@@ -27,12 +29,30 @@ export const aboutData = {
     { title: "Personalized Support", description: "Tailored solutions for individuals, families, and corporations." },
     { title: "Seamless Logistics", description: "Expert management of bookings, transfers, and accommodations." },
   ],
-  journey: [
-    { title: "Consultation", description: "Define your goals." },
-    { title: "Planning", description: "Design your itinerary." },
-    { title: "Preparation", description: "Finalize logistics." },
-    { title: "Journey", description: "Experience with support." },
-  ],
+  partnersSection: {
+    title: "Partners & Global Network",
+    description: "Selected partners and global networks will be showcased here as official collaborations are established. The items below serve as a presentation demo.",
+    airlinePartners: {
+      title: "Airline & Travel Network Showcase (Demo)",
+      partners: [
+        { name: "Emirates", desc: "Global aviation network example" },
+        { name: "Qatar Airways", desc: "Global aviation network example" },
+        { name: "Turkish Airlines", desc: "Global aviation network example" },
+        { name: "Ethiopian Airlines", desc: "Global aviation network example" },
+        { name: "Kenya Airways", desc: "Global aviation network example" }
+      ]
+    },
+    businessPartners: {
+      title: "Global Partners Showcase (Demo)",
+      partners: [
+        { name: "Global Education Network", desc: "Example Partner" },
+        { name: "International Travel Solutions", desc: "Demo Network" },
+        { name: "Career Mobility Network", desc: "Future Partner Showcase" },
+        { name: "Student Support Services", desc: "Example Partner" },
+        { name: "Global Accommodation Network", desc: "Demo Network" }
+      ]
+    }
+  },
   cta: {
     title: "Ready to Plan Your Next Journey?",
     description: "Connect with our specialists and begin your smooth, professional travel experience.",

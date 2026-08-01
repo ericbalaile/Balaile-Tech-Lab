@@ -1,14 +1,18 @@
 import Container from "../../ui/Container.jsx";
 import Button from "../../ui/Button.jsx";
+import Image from "../../ui/Image.jsx";
+import { assets } from "../../../config/assets.js";
 
-function HomeHero() {
+function HomeHero({ onOpenInquiry }) {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image - Placeholder structure */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop"
+        <Image
+          src={assets.hero.home}
           alt="Travel"
+          fetchPriority="high"
+          loading="eager"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-primary/60 md:bg-primary/50" />
@@ -22,10 +26,10 @@ function HomeHero() {
             </h1>
             <p className="mt-6 text-lg font-light text-white/90 md:text-xl">
               Plan holidays, business travel, visa support, and international
-              opportunities with professional, personalized guidance.
+              travel with professional, personalized guidance.
             </p>
             <div className="mt-10 flex gap-4">
-              <Button variant="premium" className="text-white border-white hover:bg-white hover:text-primary">
+              <Button variant="premium" onClick={onOpenInquiry} className="px-10 py-4 text-lg">
                 Plan Your Journey
               </Button>
             </div>

@@ -18,13 +18,13 @@ Global Work and Travel Ltd
 
 ## Business Type
 
-Travel and work opportunities company.
+Travel and work travel services company.
 
 (Details to be confirmed with the client)
 
 ## Company Background
 
-Global Work and Travel Ltd is a company that helps individuals explore work and travel opportunities.
+Global Work and Travel Ltd is a company that helps individuals explore work and travel travel services.
 
 Additional company history, registration details, and business information will be collected from the client.
 
@@ -37,7 +37,7 @@ Additional company history, registration details, and business information will 
 The company requires a professional digital platform that allows potential customers to:
 
 - Understand available services
-- Learn about work and travel opportunities
+- Learn about work and travel travel services
 - Build trust with the company
 - Easily communicate with the company
 
@@ -60,10 +60,10 @@ Initial assumptions:
 
 Possible service categories may include:
 
-- Work opportunities
-- Travel opportunities
+- Work travel services
+- Travel travel services
 - Student programs
-- International opportunities
+- International travel services
 
 ---
 
@@ -73,11 +73,11 @@ Initial target users:
 
 ## Students
 
-People looking for international education, internship, or work opportunities.
+People looking for international education, internship, or work travel services.
 
 ## Young Professionals
 
-Individuals seeking career opportunities abroad.
+Individuals seeking career travel services abroad.
 
 ## Travelers
 
@@ -126,7 +126,7 @@ Initial website sections may include:
 - Homepage
 - About Us
 - Services
-- Opportunities
+- travel services
 - Application Process
 - Contact
 - Testimonials

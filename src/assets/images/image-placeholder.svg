@@ -1,0 +1,5 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  <path d="M150 120 L250 120 L200 180 Z" fill="#cbd5e1"/>
+  <text x="50%" y="210" font-family="Inter, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Premium Travel Experience</text>
+</svg>

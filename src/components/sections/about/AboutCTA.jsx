@@ -5,16 +5,16 @@ import { aboutData } from "../../../data/aboutData.js";
 
 function AboutCTA({ onOpenInquiry }) {
   return (
-    <Section spacing="cinematic">
+    <Section spacing="cinematic" background="accent-light">
       <Container className="text-center">
-        <h2 className="font-heading text-4xl font-medium text-primary md:text-5xl">
+        <h2 className="font-heading text-5xl font-medium text-primary md:text-6xl tracking-tight">
           {aboutData.cta.title}
         </h2>
-        <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">
+        <p className="mt-8 text-xl text-slate-700 max-w-2xl mx-auto leading-relaxed font-light">
           {aboutData.cta.description}
         </p>
-        <div className="mt-10">
-          <Button variant="premium" onClick={onOpenInquiry} className="px-10 py-4 text-lg">
+        <div className="mt-12">
+          <Button variant="premium" onClick={onOpenInquiry} className="px-12 py-5 text-xl font-medium tracking-wide">
             {aboutData.cta.buttonText}
           </Button>
         </div>

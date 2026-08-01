@@ -1,4 +1,5 @@
 ﻿import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Container from "../ui/Container.jsx";
 import Navigation from "./Navigation.jsx";
 import Button from "../ui/Button.jsx";
@@ -46,7 +47,7 @@ function Header() {
       <Container>
         <div className="flex items-center justify-between py-5">
           {/* Brand */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img 
               src={logo} 
               alt="Global Work & Travel Ltd" 
@@ -55,7 +56,7 @@ function Header() {
             <span className="hidden text-xl font-medium tracking-tight md:block">
               Global Work & Travel Ltd.
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 md:flex">

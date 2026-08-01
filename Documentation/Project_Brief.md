@@ -14,12 +14,12 @@ The company needs a professional digital platform to represent its travel soluti
 
 ## Proposed Solution
 
-Develop a modern, responsive website that showcases company services (Travel Solutions and International Opportunities support), builds professional trust, provides clear information about service offerings, and enables customers to submit inquiries easily.
+Develop a modern, responsive website that showcases company services (Travel Solutions and International travel services support), builds professional trust, provides clear information about service offerings, and enables customers to submit inquiries easily.
 
 ## Target Users
 
 - Travelers seeking professional services
-- Individuals exploring international opportunities
+- Individuals exploring international travel services
 - Corporate clients
 
 ## Success Criteria

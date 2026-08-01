@@ -23,7 +23,7 @@ Information currently available:
 
 Initial assumptions:
 
-- Customers need clear information about available opportunities
+- Customers need clear information about available travel services
 - Customers need a trusted source before applying
 - Customers need easy communication channels
 - Website can help improve company visibility

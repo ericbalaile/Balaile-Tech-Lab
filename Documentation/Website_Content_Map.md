@@ -15,7 +15,7 @@ The website will contain the following main sections:
 - Home
 - About Us
 - Services
-- International Opportunities
+- International travel services
 - Travel Services
 - Our Process
 - Contact Us
@@ -63,7 +63,7 @@ Help visitors understand who the company is.
 Content:
 
 - Travel solutions
-- International opportunities guidance
+- International travel services guidance
 
 Goal:
 

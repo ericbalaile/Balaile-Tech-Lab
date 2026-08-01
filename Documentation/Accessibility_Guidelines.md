@@ -53,7 +53,7 @@ Information should be easy to understand.
 Users should not struggle to find:
 
 - Services
-- Opportunities
+- travel services
 - Contact information
 - Important actions
 
@@ -178,7 +178,7 @@ Requirements:
 Users should easily find:
 
 - Services
-- Opportunities
+- travel services
 - About information
 - Contact details
 

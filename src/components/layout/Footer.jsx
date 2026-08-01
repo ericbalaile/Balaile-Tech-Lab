@@ -22,11 +22,11 @@ function Footer() {
   ];
 
   const services = [
-    "Travel Management",
+    "Flight Reservations",
     "Holiday & Tours",
     "Corporate Travel",
     "Visa Assistance",
-    "Airport Transfers",
+    "Car Hire",
     "Hotel Reservations",
   ];
 

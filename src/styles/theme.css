@@ -1,4 +1,4 @@
-﻿/*
+/*
 ========================================
 Global Work and Travel Ltd
 Design System Theme
@@ -6,10 +6,9 @@ Design System Theme
 */
 
 @theme {
-  --color-primary: #003366; /* Deep Navy Blue from logo */
-  --color-primary-dark: #001a33;
-  --color-secondary: #10b981;
-  --color-accent: #ffcc00; /* Bright Yellow/Gold from logo */
+  --color-primary: #0F172A;
+  --color-background: #F8FAFC;
+  --color-accent: #C5A059;
 }
 
 :root {
@@ -17,13 +16,12 @@ Design System Theme
      Brand Colors
   ======================================== */
 
-  --color-primary: #003366;
-  --color-primary-dark: #001a33;
+  --color-primary: #0F172A;
   --color-secondary: #10b981;
-  --color-accent: #ffcc00;
+  --color-accent: #C5A059;
 
   --color-white: #ffffff;
-  --color-background: #f8fafc;
+  --color-background: #F8FAFC;
 
   --color-gray-100: #f1f5f9;
   --color-gray-200: #e2e8f0;
