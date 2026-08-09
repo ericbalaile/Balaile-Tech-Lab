@@ -11,6 +11,7 @@ function ServiceCard({ service, onClick }) {
         <Image
           src={service.image}
           alt={service.title}
+          fetchPriority="low"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-primary/5 transition-opacity duration-500 group-hover:opacity-0" />

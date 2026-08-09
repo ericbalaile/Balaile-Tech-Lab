@@ -1,7 +1,9 @@
-﻿import { NavLink } from "react-router-dom";
+﻿import { NavLink, useLocation } from "react-router-dom";
 import Container from "../ui/Container.jsx";
 
 function Footer() {
+  const location = useLocation();
+
   const quickLinks = [
     {
       label: "Home",
@@ -22,12 +24,12 @@ function Footer() {
   ];
 
   const services = [
-    "Flight Reservations",
-    "Holiday & Tours",
-    "Corporate Travel",
-    "Visa Assistance",
-    "Car Hire",
-    "Hotel Reservations",
+    { label: "Flight Reservations", path: "/services?service=flight-reservations" },
+    { label: "Holiday & Tours", path: "/services?service=holiday-tours" },
+    { label: "Corporate Events", path: "/services?service=corporate-events" },
+    { label: "Visa Assistance", path: "/services?service=visa-assistance" },
+    { label: "Car Hire", path: "/services?service=car-hire" },
+    { label: "Hotel Reservations", path: "/services?service=hotel-reservations" },
   ];
 
   return (
@@ -69,7 +71,15 @@ function Footer() {
 
             <ul className="mt-4 space-y-2 text-sm text-gray-300">
               {services.map((service) => (
-                <li key={service}>{service}</li>
+                <li key={service.label}>
+                  <NavLink
+                    to={service.path}
+                    state={{ from: location.pathname }}
+                    className="transition-colors duration-200 hover:text-white"
+                  >
+                    {service.label}
+                  </NavLink>
+                </li>
               ))}
             </ul>
           </div>

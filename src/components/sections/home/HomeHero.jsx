@@ -9,7 +9,7 @@ function HomeHero({ onOpenInquiry }) {
       {/* Background Image - Placeholder structure */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={assets.hero.home.replace('.jpg', '.webp')}
+          src={assets.hero.home}
           alt="Travel"
           fetchPriority="high"
           loading="eager"

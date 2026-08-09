@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Container from "../ui/Container.jsx";
 import Navigation from "./Navigation.jsx";
@@ -8,10 +8,24 @@ import logo from "../../assets/Brand/logo/company-logo.png";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(1);
+  const brandRef = useRef(null);
+  const [fullWidth, setFullWidth] = useState(250); // Fallback width
+
+  useEffect(() => {
+    if (brandRef.current) {
+      setFullWidth(brandRef.current.offsetWidth);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      const scrollY = window.scrollY;
+      setIsScrolled(scrollY > 20);
+
+      // Calculate 1 (visible) to 0 (hidden) over 200px
+      const progress = Math.max(0, Math.min(1, 1 - scrollY / 200));
+      setScrollProgress(progress);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -39,8 +53,21 @@ function Header() {
               <img 
                 src={logo} 
                 alt="Global Work & Travel Ltd" 
-                className={`h-10 w-auto transition-all duration-500 ease-out`} 
+                className={`w-auto transition-all duration-500 ease-out`}
+                style={{ height: `${40 + (1 - scrollProgress) * 8}px` }}
               />
+              <div
+                className="hidden md:block text-2xl font-medium tracking-tight overflow-hidden whitespace-nowrap"
+                style={{
+                  fontFamily: "'Allura', cursive",
+                  width: `${scrollProgress * fullWidth}px`,
+                  opacity: scrollProgress,
+                  transition: 'width 0.1s linear, opacity 0.1s linear',
+                  wordSpacing: '0.1em'
+                }}
+              >
+                <span ref={brandRef} className="inline-block whitespace-nowrap">Global Work & Travel Ltd.</span>
+              </div>
             </Link>
 
             <div className="hidden items-center gap-8 md:flex">
