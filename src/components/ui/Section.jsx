@@ -4,8 +4,8 @@ function Section({ children, background = "default", spacing = "default", classN
   const baseStyles = "transition-colors duration-300";
 
   const spacingStyles = {
-    default: "py-16 md:py-20",
-    cinematic: "py-24 md:py-[--section-xl]",
+    default: "py-12 md:py-20",
+    cinematic: "py-16 md:py-[--section-xl]",
   };
 
   const backgrounds = {

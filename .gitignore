@@ -32,3 +32,6 @@ Thumbs.db
 # Python Learning Environment
 __pycache__/
 *.pyc
+
+# Gemini CLI configuration
+.gemini/

@@ -5,11 +5,11 @@ import { assets } from "../../../config/assets.js";
 
 function HomeHero({ onOpenInquiry }) {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative min-h-[50vh] md:min-h-screen w-full pt-20 pb-16 flex items-center overflow-hidden">
       {/* Background Image - Placeholder structure */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={assets.hero.home}
+          src={assets.hero.home.replace('.jpg', '.webp')}
           alt="Travel"
           fetchPriority="high"
           loading="eager"
@@ -18,10 +18,10 @@ function HomeHero({ onOpenInquiry }) {
         <div className="absolute inset-0 bg-primary/60 md:bg-primary/50" />
       </div>
 
-      <div className="relative z-10 flex h-full items-center">
+      <div className="relative z-10 flex w-full items-center">
         <Container>
           <div className="max-w-3xl text-white">
-            <h1 className="font-heading text-5xl font-medium leading-tight tracking-tight md:text-7xl">
+            <h1 className="font-heading text-2xl sm:text-4xl font-medium leading-tight tracking-tight md:text-7xl break-words">
               Professional Travel Solutions For Every Journey
             </h1>
             <p className="mt-6 text-lg font-light text-white/90 md:text-xl">

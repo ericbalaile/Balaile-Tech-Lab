@@ -74,15 +74,15 @@ function ServiceDetailsModal({ isOpen, onClose, service, onInquire }) {
         {/* Right Column - Content */}
         <div className="flex-grow flex flex-col w-full md:w-3/5 overflow-hidden">
           {/* Header */}
-          <div className="p-8 flex justify-between items-center border-b border-gray-100">
-            <h2 className="font-heading text-3xl font-medium text-[#0F172A]">{service.title}</h2>
+          <div className="p-6 md:p-8 flex justify-between items-center border-b border-gray-100">
+            <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#0F172A]">{service.title}</h2>
             <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Close">
               <svg className="w-6 h-6 text-[#0F172A]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
             </button>
           </div>
 
           {/* Content */}
-          <div className="flex-grow overflow-y-auto p-8 space-y-10">
+          <div className="flex-grow overflow-y-auto p-6 md:p-8 space-y-8 md:space-y-10">
             <p className="text-lg text-slate-700 leading-relaxed">{service.description}</p>
             
             <section>
@@ -128,7 +128,7 @@ function ServiceDetailsModal({ isOpen, onClose, service, onInquire }) {
           </div>
 
           {/* Footer */}
-          <div className="p-8 border-t border-gray-100 flex gap-4">
+          <div className="p-6 md:p-8 border-t border-gray-100 flex gap-4">
             <Button variant="premium" className="flex-grow py-3 font-heading tracking-wider uppercase" onClick={onInquire}>
               Inquire Now
             </Button>
